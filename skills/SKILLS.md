@@ -15,3 +15,11 @@ Reusable capabilities live in subfolders under `skills/`.
 1. Copy `skills/_template` to `skills/<new-skill-name>`.
 2. Update `SKILL.md` with trigger rules and workflow.
 3. Add only the subfolders you actually need.
+
+## Repo Skills
+
+- `business-work-common`: shared workflow, evidence standards, and review bar for business-facing work.
+- `rfp-response`: proposal, questionnaire, and procurement-response writing.
+- `slide-deck-creation`: executive presentations, business storytelling, and PPTX generation.
+- `business-financial-analysis`: revenue, cost, margin, pricing, forecast, and business-case analysis.
+- `operational-data-analysis`: delivery, staffing, service, backlog, SLA, and productivity analysis.

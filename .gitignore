@@ -48,6 +48,11 @@ pip-wheel-metadata/
 *.war
 .gradle/
 target/
+*.docx
+*.pptx
+*.xlsx
+*.cmd
+*.pid
 
 # .NET
 bin/
