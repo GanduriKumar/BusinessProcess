@@ -25,3 +25,6 @@ Reusable capabilities live in subfolders under `skills/`.
 - `operational-data-analysis`: delivery, staffing, service, backlog, SLA, and productivity analysis.
 - `internal-leadership-storytelling`: 12-step internal leadership storytelling for solution positioning, approval narratives, and delivery-leadership decks.
 - `action-item-extractor`: action items, decisions, owners, and executive follow-ups from meeting transcripts, especially Teams transcripts.
+- `design-to-code-solution`: design-to-code solution positioning, workflow explanation, scope clarification, and leadership/client review support.
+- `cua-testing`: computer-using-agent testing solution review, reliability explanation, cost and rollout analysis, and review support.
+- `geo-optiflow`: GEO / OptiFlow positioning, platform-fit analysis, business-model alignment, and review support.

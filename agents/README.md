@@ -25,6 +25,9 @@ This folder contains agent definitions.
 - `ops-reviewer`: repo-level operational analysis and delivery-review agent; pairs with `skills/operational-data-analysis`.
 - `leadership-storyteller`: repo-level internal solution-storytelling lead; pairs with `skills/internal-leadership-storytelling`.
 - `action-item-reviewer`: repo-level Teams transcript and meeting follow-up reviewer; pairs with `skills/action-item-extractor`.
+- `design-to-code-lead`: repo-level design-to-code solution lead; pairs with `skills/design-to-code-solution`.
+- `cua-testing-lead`: repo-level CUA testing solution lead; pairs with `skills/cua-testing`.
+- `geo-optiflow-lead`: repo-level GEO / OptiFlow solution lead; pairs with `skills/geo-optiflow`.
 
 Each active agent now includes:
 
