@@ -23,6 +23,7 @@ This folder contains agent definitions.
 - `deck-strategist`: repo-level executive deck and PPTX lead; pairs with `skills/slide-deck-creation`.
 - `finance-reviewer`: repo-level finance and business-case reviewer; pairs with `skills/business-financial-analysis`.
 - `ops-reviewer`: repo-level operational analysis and delivery-review agent; pairs with `skills/operational-data-analysis`.
+- `leadership-storyteller`: repo-level internal solution-storytelling lead; pairs with `skills/internal-leadership-storytelling`.
 
 Each active agent now includes:
 

@@ -23,3 +23,4 @@ Reusable capabilities live in subfolders under `skills/`.
 - `slide-deck-creation`: executive presentations, business storytelling, and PPTX generation.
 - `business-financial-analysis`: revenue, cost, margin, pricing, forecast, and business-case analysis.
 - `operational-data-analysis`: delivery, staffing, service, backlog, SLA, and productivity analysis.
+- `internal-leadership-storytelling`: 12-step internal leadership storytelling for solution positioning, approval narratives, and delivery-leadership decks.
