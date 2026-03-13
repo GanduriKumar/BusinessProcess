@@ -1,0 +1,713 @@
+[
+  {
+    "item_id": "I1",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": "Let's say you have a text box saying that this is enumerate. This will be 20 should create an all of those two things, yeah.",
+    "owner": "This",
+    "due_date": "",
+    "source_ref": "line_5"
+  },
+  {
+    "item_id": "I2",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": "The what folks have worked to?Hitting the triangular or React code out of Figma designs. So you just create a Figma design you point.MCP server to pull the design and then it will go ahead and generate your.This is a demo again differentiation.The differentiation of solutions that exist is that we are trying this out in projects to create an actual benefit in partnership with the engineering team.Either we strong develop point or we can incorporate in our engineering process.OK, now for you to make most of it, for you please the three send and come in the front. I definitely know I've sat one session at the back. You cannot see it from the back, so please don't be averse.This is technology. This is not PPT PMGM dollar. That is not interesting and there is again no.All.Hard boundary here that you cannot come at the front. I know it's.Post lunch, I can order some if that helps. I can get each one of you. Whoever makes, raise your hands. I'll go get it. I need one. Anybody needs a coffee that I can get for you?Anybody else? Three. Anybody else? Four. I mean, I have two minutes, but I can manage four. Anybody else? All right, this one. OK, it's OK.So ask as many questions.The idea is one of these three I would like for you to try. For you it's going to be angry, but the rest it's going to be react. Microsoft will get react. So this everybody has to use.It says Billy.Prateek, not one teams here in this room. Who is it? Sorry, we don't have one.I think I do.",
+    "owner": "it",
+    "due_date": "",
+    "source_ref": "line_7"
+  },
+  {
+    "item_id": "I3",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": "See.Nathin, you will be going to take the slides.",
+    "owner": "you",
+    "due_date": "",
+    "source_ref": "line_9"
+  },
+  {
+    "item_id": "I4",
+    "item_type": "action_item",
+    "speaker": "Prateek Gera",
+    "text": "OK. Thank you. OK, thanks, Vishan. OK, good afternoon everybody. So thank you Sanjoy for setting up the context. So we are going to talk about design to code wherein we are going to convert Figma design into the React code. To set the context further, this is the Figma screen.So this is from the project clienteling within the Lululemon account. This is one of the screen that we are trying to convert using the AI agent. So what the screen does, this is basically the notes that any of the agent or a personal shopper will take based on the coordination that they will do with the customers.We are able to search the notes. Notes are all listed here. We can sort them, paginate them, pin and unpin them. So these are the basic things that are to be implemented in this page. This is the page that we are going to convert. Now around this page we have written there is a detailed written story which talks about the acceptance criteria that also.Talks about how the search field search functionality will work, what are the fields for each of the node, how the pin section and pin section will behave, how the pagination will behave, so on and so forth, how the visual design should look like, and then at the end we have.This stigma URL which is pointing to the notes section which I have just demonstrated here. So this is the source. Basically in our agent we give a prompt and based on that prompt it trace the JIRA ticket, analyze all the details mentioned in the ticket.With the MCP server connects to the Figma, understand all the design which is there, each and each and every element, layout, component, section and whatnot, and then takes time, arise and convert it into the code. So this is the solution that we are going to.Present. This is demo that we're going to present. But before that, I'll just quickly summarize the overall solution for all of us here.So why do we need this? Because so far we've been doing the manual transition or translation of the code wherein the developers have to write it for each and every component. It becomes monitoneous for the seasoned engineer. It also becomes quite repetitive and they also get fed up. So in this.",
+    "owner": "shopper",
+    "due_date": "",
+    "source_ref": "line_14"
+  },
+  {
+    "item_id": "I5",
+    "item_type": "action_item",
+    "speaker": "Prateek Gera",
+    "text": "At our the AI is is is going at a very very fast pace. I think everybody would want to do this automation where we can work this design into the code just based on the prompt. It was it is going to save a lot of time. It will save you from the repetitive same UI development because on on one application we will have similar.",
+    "owner": "It",
+    "due_date": "",
+    "source_ref": "line_16"
+  },
+  {
+    "item_id": "I6",
+    "item_type": "action_item",
+    "speaker": "Prateek Gera",
+    "text": "UI from one page to another, so that will also be saved. It will also faster the order delivery execution time. This is why we need this solution. This is a challenge that this particular solution is going to help. Why we're trying to solve this problem now because we can see the AI is at that maturity. We can leverage the LLM to convert.The designs into the high quality code which can be used as is in the production system with little to no or medium alterations that may be needed. We have API first design tools earlier, they were not available now with MCP server with API key where we are able to collaborate and integrate.With multiple systems. That is why we are bringing up or getting up into the system at this moment because we have all the tools and technologies available to take this to the next level. That is why we are doing it at this moment. How does this particular solution solve the overall challenge? So what it does is basically as I mentioned it takes.Jira take it as an intake, analyze the Figma code, generate, analyze the Figma design, generate the code. This is the design of the analysis step and then in the validation and the delivery. It also reviews the code before creating the Mr.Does the test test generation also check for the ES link errors and whatnot? So basically there are guardrails guardrails also before the Mr. is generated and at the end the PR or the Mr. is generated for a developer to manually review it. So this is the overall process. This is the solution about this stuff.Now we're talking about the maturity of the solution. So in quarter 32025 we started integrating our agents, reading the GitHub Jira issues, GitHub or Jira issues. We integrated Figma parsing and then also we have also tried to generate the React code.In quarter quarter four we are able to create the fill pull request and we are able to transition the Jira status also. So and in Q126 the the idea is that this all happens in the autonomous mode wherein the the agent picks up the ticket assigned to a developer just as we saw for the bug fixer we would want to do.Something similar for this particular solution as well, but currently we do it in the interactive mode where we're given some prompts, give it the ticket ID and then it it does all the job. So this is the the maturity level of the solution so far.",
+    "owner": "a developer just as we saw for the bug fixer we would want to do.Something similar for this particular solution as well",
+    "due_date": "",
+    "source_ref": "line_18"
+  },
+  {
+    "item_id": "I7",
+    "item_type": "question",
+    "speaker": "Prateek Gera",
+    "text": "Some measurable benefits if we have we have implemented in in the starter case we have implemented in the development clienteling program. We have seen it has been able to achieve very close match to the Figma designs. It though it depends upon the complexity of the design. It also depends upon if some similar design already exists within the code base.This or not, how clearly? What are the standard practices being used to design in the Figma? There are a couple of things, but we have seen in most of the cases it has been able to create very close Figma designs wherever the standard components are used. It also helps us in the quicker ticket turnaround.Because it is all taken up by the AI agent, contrary to the manual way where we have so many developers working on on various tickets coming up with various skill sets, we can see some some coding practice differences in all the code done by the developers. But when we get it done through the AI agent, we see some of the consistency.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_20"
+  },
+  {
+    "item_id": "I8",
+    "item_type": "action_item",
+    "speaker": "Prateek Gera",
+    "text": "NC being produced in the output. So that is another benefit that we get out of the solution.Within Lululemon, we've been able to see clienteling program. The effort that we were able to see is approximately 21% in the front end side. We have we've taken out the non productive time unit testing coding. We've been able to save approximately 21% of the effort.Uh over over a sprint for four to five developers in the front end side.Now, how easy for other teams it is to adopt and deploy in their projects? So I would say it is kind of plug and play. You just need to do some initial configurations. For example, we need to have the JIRA API key, GitHub API key and Sigma MCP servers. That is the initial assessment done. Once it is done, the agent can be deployed.To any of the non-critical projects and we can set up some metrics to measure how it is working out if it is working out well and then we can get the feedback and we can refine the agent further on to accommodate any shortcomings or any loopholes for now. So this is this is how easy it is currently to adopt and deploy to any of the any of the project that is.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_22"
+  },
+  {
+    "item_id": "I9",
+    "item_type": "risk",
+    "speaker": "Prateek Gera",
+    "text": "using any of the front-end development.Now talking about the dependency, I think I've already covered API accesses, design accesses for Jira, Figma, MCP server is need for AI. We can use Gemini CLI or we can also leverage GitHub Copilot which we use in HCL Tech extensively. And currently we've been leveraging React as the UI framework. We plan to do it for the Vue JS and Angularjs.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_24"
+  },
+  {
+    "item_id": "I10",
+    "item_type": "question",
+    "speaker": "Prateek Gera",
+    "text": "Yes as well. Currently this in Lululemon client tailing we have been using it for React.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_26"
+  },
+  {
+    "item_id": "I11",
+    "item_type": "question",
+    "speaker": "Prateek Gera",
+    "text": "So now talking about the alternatives like so one is we we do the manual UI development which which we have been doing it for so long which is the legacy one. But in market we have some SaaS solutions which which do this this magic of converting the design to the code but they are the standalone products. What we are doing as part of the solution is the full.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_30"
+  },
+  {
+    "item_id": "I12",
+    "item_type": "question",
+    "speaker": "Prateek Gera",
+    "text": "Blown workflow integrated from Jira to design to the Mr. created and then some guard is also in form of the human to review it and making sure that nothing scrappy goes out in terms of production but which is not there in the standalone SAS solution. So this is what how I think we're talking about the alternatives.So I covered the slide if you want to take it over.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_32"
+  },
+  {
+    "item_id": "I13",
+    "item_type": "risk",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": "I just want to take a closer to see if people have any questions in terms of what it is and so one one question from like it is applicable for mobile as well or it is just the web development.Not mobile React, native React, not Swift Portland right now.But that's a good input. There's something can be looked at, but not swift, but I I because last week there was a query from but it can be done. These guys, these guys can experiment with it. It's not an issue.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_33"
+  },
+  {
+    "item_id": "I14",
+    "item_type": "question",
+    "speaker": "Bablu Lal - ERS, HCL Tech",
+    "text": "Yeah, so just to add to mobile, so but but this does take care of responsive implementation of the web as well. So it does cover, yeah, the no the responsive.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_35"
+  },
+  {
+    "item_id": "I15",
+    "item_type": "question",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": "So let me say for then the SAS solution available in the marketing, what is the workflow? Jira is getting the requirement for the Figma design. Wait, wait, it's not OK. We'll show you that. So what we'll do is we'll create a Figma and show you the reaction.What? Then we go saying that we are providing more of workfill. So what do we do in Jira? Looking at requirement, then seeing the requirement then yeah, because not everything you can include in Figma.From a UX perspective.And when we see the design, we should ask more questions and also your.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_38"
+  },
+  {
+    "item_id": "I16",
+    "item_type": "question",
+    "speaker": "Prateek Gera",
+    "text": "Right. So I can answer that question. I I can answer that. For example the page this this UI also talks about the pagination right in the in in the UX you would not be able to in the Figma you'll not be able to mention how the pagination would would behave or would would perform. But when it is written in the JIRA story, the agent is able to read that and would try to make.So the pagination function as per the expectation mentioned in the Jira ticket.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_39"
+  },
+  {
+    "item_id": "I17",
+    "item_type": "question",
+    "speaker": "Prateek Gera",
+    "text": "This fast.This is a design. It is not a text, so it may not be turned blue. But yeah, this is this is the screen that I'm talking about, the bottom center bottom of my screen, the pagination I'm talking about.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_43"
+  },
+  {
+    "item_id": "I18",
+    "item_type": "question",
+    "speaker": "Bablu Lal - ERS, HCL Tech",
+    "text": "Maybe Deepak, you can start with the Jira itself and then.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_50"
+  },
+  {
+    "item_id": "I19",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": "Funding that they want to so actually it's called Pigma. It's so the design will come from Pigma. That should be that is what the Pigma that was the Pigma. So can you show the Pigma design?",
+    "owner": "design",
+    "due_date": "",
+    "source_ref": "line_51"
+  },
+  {
+    "item_id": "I20",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": "Yeah, if you just select it, you know, so this is, yeah, this is your pick one. So this is the pick one to the right. Now go back to Jira and see what's there in Jira.And can you highlight the text by selecting it? Yeah, that's. Yeah, yeah, so that's what was weird. So if you read, it's saying they.10 nodes will be maximum 10 nodes will be. Sorry. So let's say the requirement only 25 or that it should be configurable.25 or 100 but this thing so you can put it optional but you can put it but this in you know this is the requirement. So outside of the structure this is the requirement that they put in the GW. Yeah plus any styling guide changes right from screen to screen sometimes they may have so.Those differences can also come from zero.",
+    "owner": "nodes",
+    "due_date": "",
+    "source_ref": "line_53"
+  },
+  {
+    "item_id": "I21",
+    "item_type": "action_item",
+    "speaker": "Prateek Gera",
+    "text": "So on the bottom right, if you look at the bottom right of the screen, Deepak is adding the comment or the command of the prompt which has been taken by the agent. So he's passing the Jira ID which we just showcased and based on the Jira ID the agent will start its execution.",
+    "owner": "agent",
+    "due_date": "",
+    "source_ref": "line_63"
+  },
+  {
+    "item_id": "I22",
+    "item_type": "action_item",
+    "speaker": "Deepak Bika",
+    "text": "So that's only one input. I'm giving one zeta ticket ID here and the rest the agent until everything sits automatically.So now it's read some credentials. So right now the CI agent's automatically logging into our JIRA system using by the NCB server the credentials from our environment file.And because it's required some action here, we have to allow to fetch the details.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_64"
+  },
+  {
+    "item_id": "I23",
+    "item_type": "question",
+    "speaker": "Prateek Gera",
+    "text": "So for every step that is happening there is a verbose coming up on the screen on the on on the right on the right side of the screen how it is happening. So currently it is reading the reading the ticket details in Jira. So just to analyze and understand what is what are the next steps the agent has to take.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_65"
+  },
+  {
+    "item_id": "I24",
+    "item_type": "action_item",
+    "speaker": "Deepak Bika",
+    "text": "So now it's supporting the complete ticket details like the title, descriptions, acceptance criteria or any attached Figma design.So based on the informations, this agent will generate the code.It's required actions and the permission sometime pushing the generated code into the actual repo.Now it's it's start analyzing the our code base.Taking some references from the existing components.",
+    "owner": "agent",
+    "due_date": "",
+    "source_ref": "line_66"
+  },
+  {
+    "item_id": "I25",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": "Even then, so you will, yeah, you will. So we have something on platform X which creates a component plus plus. It's not a native they are component, but it defines other things in the program. So it also understands our component structure and.Because it's there in the product.I mean the existing context, right? It is elements of already in the. I mean it's the existing context. Yeah, I mean I understand that. So for example in platform X you have React components which are not pure React form, they add the UX.They had SU, they had accessibility, plus they get the configuration from a JSON.Which is not what a pure react component that is what the definition of component. Now when you ask this to create another component, it will use the same structure to create another component which has accessibility and.JSON could be here.And also again there was also in some of it, right? No, this is not multiple problem, you just get one again.Don't worry about what the trigger is. He just he gave one command saying that please resolve this trigger issue. That doesn't have to come in from an ID. It can come in from a web. It can come from assigned to. He didn't tell the ID he gave in his ID. He gave a command to the.OK, so that is our trigger. But the trigger doesn't have to be within the ID. The trigger can also be that as soon as you assign it to this individual on start this.Right. Or it can be from a CLI also like say that. So the trigger doesn't, you know, it doesn't matter how you trigger, but it is the engine that is doing the work. So the trigger is just telling what to do.The agent is checked into the report. It's already part of the social I already have created the and it's doing the job. If you have created it, it's not. If you have created it, you know not everybody has done that.I think I I think you have a certain variation of this also, right? I'll forget you guys. Maybe after this we can to share.",
+    "owner": "you",
+    "due_date": "",
+    "source_ref": "line_69"
+  },
+  {
+    "item_id": "I26",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": "What is the the components including the will it exclude those components like you know component. In this case we are going one component in general.Yeah, from what I understood, I cannot guarantee, but that's serious. But when you do, you also put place components, you create the component design and then like the molecule design, they say you create atoms and create molecules and then somehow, right. So that is something I need to understand because of what you're doing, you know this thing.Because what you can also do is look at reference and already and if you want to be so that would be we'll stay on the topic. OK, but because what we need to take that page, OK.But that you can put it in Jira also saying that this is this thing and this part is going to be this part is going to be, but in that case it's on the. So probably that's something more that we are planning on the I think Jira C clear to the Jira is to give such inputs.OK, say that you know you have the header and then you know component which is the carousel and so.",
+    "owner": "the",
+    "due_date": "",
+    "source_ref": "line_71"
+  },
+  {
+    "item_id": "I27",
+    "item_type": "action_item",
+    "speaker": "Bablu Lal - ERS, HCL Tech",
+    "text": "Yeah, at on top of it, actually Sanjay, this agent also had that context that if there are existing components, it needs to reuse and if needs it needs to generate components, it should follow the component pattern.Busy.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_72"
+  },
+  {
+    "item_id": "I28",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": "Yeah, you can get it in the prompt, but it is like writing the same code over and over again. It's not a function. It's correct. You can, but why you? So you can define this as a skill and give the prompt to do multiple things, right? So a combination of how you use it, the instructions.Is what I mean to achieve what what Srini was saying and what you and then in case of the it's it's customizable.And then like we have the same, they haven't tried out all the but we can try. I mean since it's a start that you have to make and then customize and customize, make sure it you know at least the base for it will do for you so that.And I'll give you something test that we have to do, but they're just see this will be delivered. So.OK.Yeah, but it will be a special, right? Bob has other things that. Yeah, it's like we have internal, which said we have, but then we should include that also and then have other people, right?",
+    "owner": "it",
+    "due_date": "",
+    "source_ref": "line_73"
+  },
+  {
+    "item_id": "I29",
+    "item_type": "action_item",
+    "speaker": "Deepak Bika",
+    "text": "Yes, I think this is also generated. Here we can see these three files. Now there's more work we need to do here. Let me show you because if I give the weight 100% here.By the CSS so you can see here we have the complete UI now, yeah.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_79"
+  },
+  {
+    "item_id": "I30",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": "We saw that the design was not exactly like what we might do. So the next step that we are trying to do experiment with this and then we will pass them towards judge team after they generated the run the page, take a screenshot, compare it with Sigma and the judgement say it would not go if it is not true.Go back then. But it probably a model related problem. No. Like you can can always try. Yeah, yeah, I mean it's it's like it's like it also that you ask somebody to go and make a benefit.Everybody have a different interpretation or you go back and make it create, make the trunk bigger. That's something that we're going to the companies and the judge can go back and say you know and the judge will give up or will say that 85%.Or like if you are having a sportsman, then it's very high. So then I can go back and try and keep it. I can also call it the it's not only that is what's happening is that was supposed to win this.It may be this spacing like that, spacing like place, so you can pass it to a giant. So that is what we're trying to do next is that you know, have an agent that will tell you put it or talk to it. So just do call out the gaps also. I don't know that it's a concept I you know one night and.I was just thinking through the reading something and I thought can we do this experiment. We still experimenting, but that's what we want to do. It's not through the gaps. They just need to fill it in here. Yeah, that's a concern. More like a redline validation. It's slow. I mean see also when you will go and look at it and say you know.That's what the business you just say they are, right? So again, like I said.The base code is done, CSS is not done, validations are done or front end perspective. It would save you huge amount of work very this when you had to see what you made that that you showed right there. It is very powerful for you to go back and be very confident with your customers.Right. So that's what it is. Now questions. Yeah, I'm so sorry.Yeah, yeah.Yes, the sponsor security of security, all complex including things like the customer came back and said you guys told him for basic e-mail information and saying that all of those.Uh, this thing that you just as a system problem. So onboarding of people is much easier, right? Uh, from a content perspective, what's working? Don't get.I think I heard, I heard from the same. I don't know what we're getting. Why? I think it should be no, because the has to be tied to.The best service called at the back end. It can't just show something right? It'll have to also do something right? So if you're able to write.It also better saying that this what it should go about this service to add a customer. This is just UX generation because what you're trying to do is that you generate all the and then you start working on wiring right? So it's like we have the and then you start.And using the same keyword. Yeah, I think so. The front end, almost 89% can be done. Then you have the wiring. But the wiring also can be done. So wiring can be.Work with the bug fixer. I mean, whatever the wiring instructions are there, that can be passed into. Eventually you can, yes.Concept is should be called as the industry double check and then the DDLC the data.It's it's it's usually now, but it doesn't matter.And so the idea that you get so that you don't start at and all I'm trying to tell you guys is don't reinvent, make it better.Right, that's all. The one I'd want. You want tell me it works. I want to get it from.What is that? Is it OK to assume that one advantage can come from like different sizes of the suites will be there with different is responsive by design. So in Sigma for various viewpoints right breakpoints you can define. What should it look like? Should we define for all breakpoints?That is not OK. That's table stakes responsible.Any questions?Alright, we're back, we're back. So this is successfully are using it in the people, the people you've seen that and the.Uh, it is a public target.60% of it.50% six.And then what is important is to know where it will not work, right? And be very realistic about.But.Questions. Should we move on to the next? Yeah, but I need to slip.OK.Any other questions? I can I can.Yeah, again, around the process again.And Harrison, OK, he's been experimenting with something. No, they're still doing stuff that to do like a that's in the works.Hopefully one more issue that that also which I think will be really good right then it says you know it's self analyzing and not and to your point somebody was saying that OK that's can also they'll give a little text that's to send that what you did is correct but.I'll be much more easier, right? Done.",
+    "owner": "we",
+    "due_date": "",
+    "source_ref": "line_85"
+  },
+  {
+    "item_id": "I31",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": "I'll just send that context. Yeah, usual.In the testing you have three scenarios. Number one, it is totally manual. Second, it is automation, but automation is not stable or it's taking too much of cost in maintaining the automation because you have very dynamic UI changes.Third, you have a very good polished automation with very less maintenance. So it is applicable for A&B, maybe not applicable for three. Now if you have to do manual testing to be done by agent.This is very simple. It will take test cases as input, generates the script internally and execute all the test cases. In industry there are two approaches. One approach is if you are developing test script or automation script, do by any.2nd is end to end execution done by agent and only input is English or test cases. So this is approach #2. So that's now the possible scenarios like regression testing to be done by agent.Or exploratory testing to be done by agent. You told agent do it for eight hours, 12 hours and found the bug or sometime production support validation done by agent. So you are saying go to the production, do the testing and try to log the bug before the real customer do that. So you reduce the support cost.Cost. So that's the concept in typically automation. What happened? You just try to figure it out what is the object, then go and click that object or do that action and then compare what happened to the expected one.So that can be done by DOM or POM or can be done by images. That's where LLM or Agent come in with the picture. There are multiple approaches where we are doing that detection and validation through images or by DOM. DOM is relatively more.Accurate or accuracy terms, but all that happened or started from Microsoft account and then today or last week we done for Trini London and Alta. So you'll see that demo in detail and then if as a new head you want to adopt, what are the things required from your side?With that, what do you need? But I think you should also ask people how many of them are exposed to see you at the phone site? Yes, yes. So the terminology is computer using agent. So how many heard about this?For what I'll see you way, I think.It's, it's, it's. We'll even also do a bit of. We'll do that. But yeah, very simple use case. Think you want to very simple use case and this is for Imagine.You have to test that when you click the hand up button, the call should discern. Not that I want you to do, but what do you do?They look at the page, right?Five seconds later, I give you another in which the bug is here.It will take you the same time, yes.A selenium script.That guy will say that's the button not found correct. If the ID of the button is changed.We don't. We can computer. What the CUA does is look for things that you describe as text. You said click the red button, then go figure out.That there is a lot of technology. What Boeing did not cover is there are at least three three parallel solutions that people have come up with. Microsoft has come up with one, Sirius XM has come up with two.See if someone has come up with one. Is there a right approach though? Take either one of them. But the challenge that we found with CUA is that it is not deterministic. It will always go find the network at time to 80% of the time to find, but for a detection we want to make it 100%.So what we have done is out of the three, we have taken the best solution. It's a multiple level of call packs. Try this. If not, try. If not, we could try it all to both of them. How is it important one?In other cases, like in case of the.This app changes everything. Sometimes the menu item is here, sometimes you get in the second level, sometimes the button is here, sometimes the button is here, the ID is changed, the functionality is the same like there.Right. So there now what we've done is broken the dependence of the automation.And the intent. So what we've only defined is intent. Click handle the ball and it works.OK, we will go to the details of the very simple. Let's say button may whether it is written, play or run intent is to execute that button. So in this system it doesn't matter whether play is return or run is return.Because intend and saying you have to execute or play that another example like same application in series XM it is different outlook in all the autos different automobile companies so they implemented similar solution.That is now executed very easily in all the different automobile companies. I think with that what you need, you can. Yes, you use the exploratory testing. Yeah, typically the understanding is there are no test cases associated with it. That's that's the.",
+    "owner": "It",
+    "due_date": "",
+    "source_ref": "line_87"
+  },
+  {
+    "item_id": "I32",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": "The ground and context. So you say this URL test for eight hours for accessibility testing, testing, testing and try to break the system. So if you give 2 pager or three pager of context then agent will run in a loop or whatever duration you want.That is for exploratory testing. OK, so generation of that prompt is important if I were to say that out of these 250 features in this device.These 18 are the most risk grown, so you do exploratory testing in whatever combination permutations. So there is there are two approaches. One is the very structured approach. You have test cases priming. Second is the exploratory testing approach.Where you have to give prompt in the biggest prompt of including the system prompt, you can give all all such details. It will try to break your system.As a explorer tree item. So instead of like this monkey testing or yeah right that you can have a long running agent to do it continuous right? As long as you define that, how do you want to do it? Do anything you want put you know alphanumeric and numeric.You know, try to manipulate the Dom to enable a button which is by default disabled. Does it work? You know, so do everything. So you don't have to give it all intelligence, you have to point it to directions, the intelligence it will derive.And although we are showing testing, but it's not about testing, similar concept of computer using agent is applicable for support engineering, data operations, testing, all that. It's very relevant. You can use this.So in the cameras, when you hold the camera like this, your menu items are like this. Then there's a vertical UI. Yeah. So you then all of them align like this. So put the if.Yeah, tiger thing. Rending it, huh? Very good. OK, 100%, concept wise, yes. I mean, we can make them. Yeah, yeah, yeah, yeah, yeah, it's working.",
+    "owner": "agent",
+    "due_date": "",
+    "source_ref": "line_89"
+  },
+  {
+    "item_id": "I33",
+    "item_type": "action_item",
+    "speaker": "Neeraj Trivedi - ERS, HCL Tech",
+    "text": "Yeah, so when when we talk about the CU computer using agent, what we are talking about that how how you see a human see the screen the similar way the agent will see the screen.",
+    "owner": "agent",
+    "due_date": "",
+    "source_ref": "line_92"
+  },
+  {
+    "item_id": "I34",
+    "item_type": "action_item",
+    "speaker": "Neeraj Trivedi - ERS, HCL Tech",
+    "text": "It will make the initial call, navigate to that particular site or screen. It will take the screenshot of that so and then it will see what are the elements are there and based on that, based on whatever goals you have specified in your test cases, it will.Create a detailed instruction for the automation framework. In this case I'm using Playwright, so it will create an instruction what kind of action you have to take. Depending on the Dom or vision model, it will give you either the selectors or it will give you the coordinates or the boundary.",
+    "owner": "It",
+    "due_date": "",
+    "source_ref": "line_94"
+  },
+  {
+    "item_id": "I35",
+    "item_type": "question",
+    "speaker": "Neeraj Trivedi - ERS, HCL Tech",
+    "text": "And then it gives the instructions for the automation framework to perform those actions. OK, so simple again, observe, understand, decide, act and verify.And then repeat. These are the six steps we do.I'll I'll move on, go and talk about like it's not only for the software testing. You can do different use cases with data entry migration for the legacy system and it's not restricted. The CEA concept is not restricted with the web application only. You can work with the legacy system and Windows application.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_98"
+  },
+  {
+    "item_id": "I36",
+    "item_type": "question",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": "So that if things change, it'll be so as you introduce like in Google workspace, you introduce new features, right? You want to do a of old features or in case of meta, we have to see if we have.Uh, regression, obviously. Automation, obviously because I have right? So then what you can do or the use case in best to unit is quick production validation. Yeah, after weeks, right?So those I think that it is not.Respected to that page. Yeah, yeah, mobile logic. You can do it on mobile. You can do it for desktop apps like Microsoft users for Teams. As an example, Microsoft Teams test. You've been, you know, a variety of.Other things that we can use, anything that you can perceive with your the model.So when every time it's going for execution, it is generating the on the fly. Yeah, on the fly, on the fly, like test cases can be put the internalist can. Yeah, so that's the downside of it because of token consumption. So that's the downside of it, but.Once you had get the concept, we can cache it. OK caching the we are so we are also using it so you can cache it so that it doesn't go and enter the token cost. But the script generation is also automated type. Yeah it is. All you do is intent.Yeah, the translation to a tool is taken care of by that MCP server. See that token optimization is already. Yeah, Neeraj, sorry, go ahead.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_105"
+  },
+  {
+    "item_id": "I37",
+    "item_type": "action_item",
+    "speaker": "Neeraj Trivedi - ERS, HCL Tech",
+    "text": ":04Yeah, yeah, yeah. OK, so all these three scenario Govind already explained. If you don't have any automation, that's a a perfect way to go and onboard your application. Within a week you will see there are few test cases which you you'll be able to run.Instead of if you go for the traditional way of automation, it will take a lot of time to set up scenario B where you have automation but it's a fragile, it's it's a breaking. So that's the second best scenario you have there. Third scenario is where you have all the automation already there and it's stable.So if there is any new gap or gap areas where you can try otherwise we that's a area where scenario where we don't recommend it. OK, so I'll I'll move here what we need. We need clear test cases written in manually in English.",
+    "owner": "you",
+    "due_date": "",
+    "source_ref": "line_106"
+  },
+  {
+    "item_id": "I38",
+    "item_type": "question",
+    "speaker": "Neeraj Trivedi - ERS, HCL Tech",
+    "text": ":59No coding. Example is simply go to that page, enter valid credential verified as board load. What we another thing is 2 people one month for the customization for your tools. As of now ADO integration is there, reports are there.Test data management is there but if you want to use a particular tool then there are some customization which are needed and for that one month two people that is what it needed. Test case simplification is needed. So the second phase we we are thinking about to.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_108"
+  },
+  {
+    "item_id": "I39",
+    "item_type": "action_item",
+    "speaker": "Neeraj Trivedi - ERS, HCL Tech",
+    "text": ":55So as of now we are asking for that. In the next phase we will make that thing agentic to generate that also.Investment I have already talked about break even within two months you will see that those numbers I have not written because it will depend on how many test cases you are doing that, how many resources you already have deployed there, what is the cost of your automation in.In years and all so that we need to create and I can give you the example from the some Sirius XM and the Microsoft one that I have some numbers there.OK, so these are the three areas where we are already working on it. These three flavors Govind talked about, I think you talked about Microsoft. There is one only vision based agent. Second is the Dom based agent where we already have a 40 plus test cases already.Executing reports are already generate generated. Each and every step we take the screenshot and that mail has is getting triggered and we are sending a status that mail to the customer also.So that that that is already then the next phase is around 200 test cases. What I got from those Lululemon also that's in progress. There Vikash and team has already implemented that. They also used hybrid model, but their hybrid model is vision.",
+    "owner": "we",
+    "due_date": "",
+    "source_ref": "line_112"
+  },
+  {
+    "item_id": "I40",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": ":38Yeah, we'll have to go to the demo soon, but just wanted to tell you about the yellow just so that you'll remember in case of like also it might be useful. The problem statement there is you have a satellite radio company, right?That satellite radio comes in in many car manufacturers. So Ford, Honda, they will built in one year free subscription. So it has a certain UX depending on the car model and for the same manufacturer different variations you will have the screen will look different.So let's say the user account icon will look same but it will be in a different place. So what we could do is train a machine learning model. You know is you only look once. It's a ML model so it it is easily trainable. I mean you cannot.Easily in 30 minutes, you give it the icons and in case of cameras it's easy. So basically screen element. You can train a model, deploy it and then you take a snapshot of your screen, pass it to the model to say.Identify areas of interest. So whatever you're playing on, for example, favorites, icon, channel change, icon, volume up, item, it will say these are the boxes, bounding boxes. Then you can use that to go back and say click it. Why use it? One you know is faster, it can process.About 10 to 11 milliseconds per frame. DLM's take a lot more time. We don't need the not enter any token cost. It can run locally audio boxes.So that's also another solution. I said there are four solution. You can choose any one of them. Paul, a lot of this may not make sense, but at least please register in your bag that there is an option to do this in the products mostly, so like cameras, video cameras.How do you?",
+    "owner": "they",
+    "due_date": "",
+    "source_ref": "line_117"
+  },
+  {
+    "item_id": "I41",
+    "item_type": "risk",
+    "speaker": "Neeraj Trivedi - ERS, HCL Tech",
+    "text": ":35Yeah, yeah. So even with the Yolo 2026 release, you can run it on the video also so that that fast it is identifying the element. So per frame in a video recording also you can run that understand the.Elements. So going forward like I I mostly covered what is the challenge that maintenance time and framework setup and every engagement needs this if they are doing some some kind of you are testing.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_118"
+  },
+  {
+    "item_id": "I42",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": ":23Oh, it's not increasing time. Let's say there there is a APS sort of concept is there and the screen is completely changing. Then it is OK. We can actually generate and then execute. But where my screens are actually not that frequently changed, it's going to increase my efficient time as well, right? Because every time it will generate.",
+    "owner": "it",
+    "due_date": "",
+    "source_ref": "line_123"
+  },
+  {
+    "item_id": "I43",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": ":42Then test, then execute test. No practically same level. Practically same. Practically same. We have tried to see but that's the same interest to design the regression. No, you don't go for because you already have invested.If you have startup variations, unless you have to reduce your OK, it will be slower compared to Selenium, but the total cost of ownership will be much easier.Maybe when it becomes more intelligent, we'll schedule scenario coverage. Possibly. I don't know right now. So all this on zero. We have all the same results in all different parts. So what's the is they create a software?Software.Because it works in the Android app, right? So for each star they have a emulator, emulator, so we transfer new laptop. So we run the demulator things are identify every important time, get the warning box, ask APM, go get it.And then with that what has happened earlier, but every variation they used to have a separate set of automation system, four model A, four model B, CM model, Honda model. They had different automation because the Civi did not.I'll look in the composting one. So maybe we can talk about. Somebody in.But you understand the use case there, right? Because if you look up, you know they you know is a model released by the dark.Machine based recognition, you know, object relation and you can train it of your own. You'll find under no example on the net on Google's platform. Use your data to train it. I have one that you get your data.Table and put it for a model and it will work only for today.That it has its own API for you to train. You don't even have to use any other. So think think those icons in Google workspace say bold.I'm thinking more on that, right? I don't know. I don't know. It's 100%.",
+    "owner": "ship will be much easier.Maybe when it becomes more intelligent",
+    "due_date": "",
+    "source_ref": "line_125"
+  },
+  {
+    "item_id": "I44",
+    "item_type": "action_item",
+    "speaker": "Neeraj Trivedi - ERS, HCL Tech",
+    "text": ":22OK, so for demo purpose I have built this UI. Also you can run those from the CICD or webhook that or from the console line. Also console you can run those test cases. So whatever test cases or test suit you have, you can select those.From all those or few of them you uh and then you can uh run.So when you start running you have a different mode. One is the headed mode where you see the browser performing those action. If you don't want to see that you you can run headless. All the steps which are going to be performed are getting captured here.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_126"
+  },
+  {
+    "item_id": "I45",
+    "item_type": "question",
+    "speaker": "Neeraj Trivedi - ERS, HCL Tech",
+    "text": ":05So the first one I am running from the CNN where I'm going to register a user with a unique e-mail ID, verify that it's logged in and then again there are a couple of test cases from Google spreadsheet.Opening, logging and creating or finding some demo file which I already have created checking there is something entered on those Excel sheet. So that's how this demo yeah.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_128"
+  },
+  {
+    "item_id": "I46",
+    "item_type": "question",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": ":33See.Yeah, Neeraj, Neeraj, after the demo run, you should also show the test, the report of the test. But what you're seeing on the screen is that the CUA is automatically running this. So it's not Neeraj running it, it's a script which is running. You can run both headless and.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_129"
+  },
+  {
+    "item_id": "I47",
+    "item_type": "action_item",
+    "speaker": "Neeraj Trivedi - ERS, HCL Tech",
+    "text": ":53Yes, so you have all those work item here in the VSO or any other tool you have.OK, so all these test cases are already written here. The one I'm running is this one, the first one.And others also. So those test cases are very simple in a natural language. It says navigate to this site. If there is a cookie or consent banner, you need to select or accept or insert.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_132"
+  },
+  {
+    "item_id": "I48",
+    "item_type": "question",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": ":23OK.Can you can you select the minute test cases? Can you select the yeah background?",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_133"
+  },
+  {
+    "item_id": "I49",
+    "item_type": "action_item",
+    "speaker": "Neeraj Trivedi - ERS, HCL Tech",
+    "text": ":48So wait for so it's for the registration page to fully load. Verify that registration page has load, look for a form field for e-mail and password and a sign up or register button. So it's just a simple like even for this I should have written multiple steps. That's what I was talking about.A simple test case will more probability to get executed successfully. Complexity is something it executes as of now, but we have to check for it.",
+    "owner": "case",
+    "due_date": "",
+    "source_ref": "line_138"
+  },
+  {
+    "item_id": "I50",
+    "item_type": "question",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": ":10OK.It's not visible here, it's clearly, but essentially the test cases are English test cases in the go to cnn.com, click on register in the username enter this and the password enter this. So all you're putting is intent.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_139"
+  },
+  {
+    "item_id": "I51",
+    "item_type": "question",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": ":37Converting that to, converting that to actual actions of test automation is taken care by.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_141"
+  },
+  {
+    "item_id": "I52",
+    "item_type": "question",
+    "speaker": "Neeraj Trivedi - ERS, HCL Tech",
+    "text": ":52So yeah, so the the second test case, the Google demo file one is getting executed.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_146"
+  },
+  {
+    "item_id": "I53",
+    "item_type": "question",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": ":33So if Krishna allows, this is better, right? I spend no IP type, no IP type. It's implementation. Yeah, I think requires schema, extended version of, not like, no, no, no.The new version of Falcon, they are also taking English as that same thing. One thing we have not getting, we've not done this store versus the generated test case of the client, not the script, but test case. So some things can be added so that we don't have to plus.There's token optimization. If that happens, it's still that you know going outside using LLM. That is the requirement, right? Falcon don't have that. See the the intent here is if your project has frequent changes, then this is the best because manual upload is ready for you at 0. I'm not comparing.That's that's different from you. So I'm not able to capture the screen.Yeah, so he's going on Western Union now, Sibeli training under Google spreadsheet.Add the.So all the views, it's not different. I think it's already.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_149"
+  },
+  {
+    "item_id": "I54",
+    "item_type": "question",
+    "speaker": "Neeraj Trivedi - ERS, HCL Tech",
+    "text": ":52Yeah, so you you can implement like those test cases pretty good and once those test cases are executed, you get a report.What? And for each test you get evidence also that you are on the that page you have already opened that registration form.You are entering those URLs and all.So login page.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_150"
+  },
+  {
+    "item_id": "I55",
+    "item_type": "risk",
+    "speaker": "Neeraj Trivedi - ERS, HCL Tech",
+    "text": ":05So stability wise also, what are your high risk test cases? What are your medium risk test cases? What is the history of those test cases getting passed and failed?And also.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_160"
+  },
+  {
+    "item_id": "I56",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": ":21Neeraj in implementation, you were saying one month and that will include these test reporting as well. Is that right? Does that true?",
+    "owner": "that",
+    "due_date": "",
+    "source_ref": "line_161"
+  },
+  {
+    "item_id": "I57",
+    "item_type": "question",
+    "speaker": "Neeraj Trivedi - ERS, HCL Tech",
+    "text": ":22Yes.Yeah, depending on what how how much customization you need. If you need that report what I already have then then it's easy to integrate. If you are just using the VSO then I can integrate it easily, but if you are using Zira.I I haven't developed the connectors as of now.Oh, depending on how much integration I have to do and what kind of report you want.But within a week we can onboard few of the test cases which which are making sense for the POC purpose and then we can take those customization.You can also schedule the your test run through CICD or the scheduler run and all.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_162"
+  },
+  {
+    "item_id": "I58",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": ":25Then it's so no editing, no input is required. It will be generated. Now whatever you want, you can do. If you want, you can integrate with Jira.Final, final report, test, test systems, pass, fail and and he can show that. Can you show that the the pass fail report?",
+    "owner": "It",
+    "due_date": "",
+    "source_ref": "line_169"
+  },
+  {
+    "item_id": "I59",
+    "item_type": "question",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": ":46The end of the day you say that this test case is pass or fail and then this is steps what happened in that steps. So that's what. So you are getting steps and you are getting total value pass or fail on that test case.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_171"
+  },
+  {
+    "item_id": "I60",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": ":18Suppose the test case is open YouTube in English language or say German language and it will be populated for all German text. So these are the four steps. So CUA agent every step will calculate capture the image.Open do this, capture, compare.",
+    "owner": "it",
+    "due_date": "",
+    "source_ref": "line_175"
+  },
+  {
+    "item_id": "I61",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": ":39OK, I think you want to be expected.You have to give the intent. See as you look at it like this, you have a test case written in an Excel sheet with a test case ID. It had had to right just it'll read from the intent from that test case. It'll read the Excel file, read the intent with the test case ID.Reports will get generated with reference to the test case ID. Sorry.The one small utility for Lululemon what Sandeep team has written. So screen said they are creating test cases and then test cases giving to CV rather from code.See you can. So from the screen test cases, test cases to see. See that's what Nirad said, right? You go left, you take a requirement and from there you can, but not necessary code.",
+    "owner": "Reports",
+    "due_date": "",
+    "source_ref": "line_177"
+  },
+  {
+    "item_id": "I62",
+    "item_type": "question",
+    "speaker": "Neeraj Trivedi - ERS, HCL Tech",
+    "text": ":49And these test cases I have generated from the screen one.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_180"
+  },
+  {
+    "item_id": "I63",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": ":52Neeraj, Neeraj, Neeraj a minute, yeah.See, the whole intent of QE keeping QA separate from code is to get a different perspective. Now you want to integrate. I I might differ with it, but you will try to. No, no, no customer will give you a code and I think the intent is to keep that to get the requirement, but you can generate the test cases from code ops. You can do it.But you have to validate that code. Yeah, yeah, you have to validate that code. So why are you generating test cases out of that code?It's something read requirement, create test pieces, give to computer using agent, execute, compare, lock the bug and then generate the report like Jyoti team is generating report sending e-mail to customer.",
+    "owner": "you",
+    "due_date": "",
+    "source_ref": "line_181"
+  },
+  {
+    "item_id": "I64",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": ":54No, no, uh, just uh, just show the audit, no, the evidence and the audit capturing that part will show. We have to go to the other deposit.",
+    "owner": "part",
+    "due_date": "",
+    "source_ref": "line_183"
+  },
+  {
+    "item_id": "I65",
+    "item_type": "question",
+    "speaker": "Neeraj Trivedi - ERS, HCL Tech",
+    "text": ":04Yeah, yeah, that that's the portion where you have those test cases. So that is the test ID CNNTC this one and.Here you are navigating to this page. That screen is all captured that yes, we have navigated to that page.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_186"
+  },
+  {
+    "item_id": "I66",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": ":57It would be.OK, so I think I have a question. How many of you know about GEO? I think they answered generated within optimization, which is a variation of search engine optimization for the content that is generated by other.And similarly there's another concept called AEO which is answer in the optimal.Yes, you asked any question today like you get certain set of answers. So how to promote your answer in the responses?AURL techniques to improve your brand visibility, your visibility into the search responses as well as the generated responses we're trying to optimize. So I think it has got a lot of.Attention. We heard about this few months back from a customer. The customer didn't name it. He was like just asking. This is a CPG customer training in London only. They were visiting here and they were asking us like.Today my products are not visible in any of the search engine today. Like today's people are all searching in chat GBTS and all. How do I create visibility to chat responsible? This is a question which we didn't know the answer.So we went back and.What is happening in the market? So we came across the GU and AU as two terms. Then we started researching it. We thought that let's put up some PPT. But then Navi and team, they helped us creating this good prototype, which I think you will see. Not prototype, it's a solution actually.Which addresses the optimization problems. 2 use cases I'll talk about. These are all like we have demonstrated to almost 4-5 customers so far in different domains. Everywhere we've got a very good response.To this recent one, I think we have just given a demo to TD that would have seen one of the customers. They sell this beauty products and like very, very, very specific beauty products.So customer is searching for something, they're not, they're not even appearing in the in the response, the letter response. So we are trying to like create a solution, use a solution to improve upon this. Use the good service line, right? Yeah, yeah, yeah. All those people who are not, that's right, that's right.2nd is we also were approached by Intercontinental sales team simply and a lot of these bookings today they happen through OTA which are online level agencies.Another problem here is this with the online searches like this ChatGPT is becoming popular. People are just putting the question like if you're booking for this much, book me a ticket for this much price at this location.So the OTM business is almost going down because the agent on their behalf can find the booking and then book for them. Now now where the GO comes into play, like they didn't even know that GO there's a player error.So there are two two things here and we are trying to create solution for both of them. One is like first of all their brand should appear in the result itself, like I change the brand should appear. So that is the first problem. So even they're not appearing that we are losing that opportunity. Second is how to implement this agent to book the ticket directly. That is a different solution.Which you're working on called Agility Commerce, maybe next or something, we'll show you a demo of that also. So a combination of both can be used for generating the visibility of the brand and then booking it also for them. So that is the concept I think what you're trying to build there.One question. I don't know. It's a long time. Yeah, sorry. Hmm. It's like SEO. It's like a new version of SEO. Yeah, it's a new version of SEO, like search optimization was popular technique.We're not changing the content of the website here, like whatever solution we can have. Yeah, yeah, that is what it is now.Yeah, you've got a question. I'm sure. I'm sure that the customers.That's right, right, right. So otherwise they're losing that opportunity altogether. If they're not appearing in the response, then gone. Earlier with the SEO, they were at least getting the top results. Now the top results are gone.So not positioning, it's visibility. Yeah, I got a visibility. So when agent searches, it looks for some, but it's applicable almost in all the industries when even like initially the solution which has built.It is for Microsoft site itself, so we have created a demo website also to demonstrate the overall how it improves the score like they will show you. She will show how the initial scoring was and then how the new scoring is improved once we have implemented this.2.That is SCO. That is SCO. Yeah, here we cannot pay.I mean.I'm good.I understand see in in Google world they do crawl up your site. I mean Google world, for example perplexity in the browser they're building, they don't call your site. What they do is they look for specific information which is and that's what is GO is like do specific information is not.Organize properly. If it doesn't have intent based responses also, then it will fail. So what we're trying to do here is we are trying to there are no intent responses.As well as touching the content in the right way, guiding the elements to find the content the right way.Thank you. Yeah. So, yeah, so that's great. So thank you.",
+    "owner": "you",
+    "due_date": "",
+    "source_ref": "line_195"
+  },
+  {
+    "item_id": "I67",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": ":27And in future Google will integrate it back in your but it's already there when you saw it. So if you are doing an optimization on.But we'll have a few service, yeah, so the challenge would be going to check and the problem for the user and.It's the same problem as it was earlier. SEO versus SEM problem, correct? Search engine marketing. OK, same problem. Yeah, the only the other words will be a reason ready for them. How do how do I say if if I'm paying over?Uh, for uh, the future. So uh, my my information that you have rightly. Mm-hmm. I will need some and and uh.But the the customer I ask, so how do I talk about it? Why it's relevance was properly represented by I think you'll see there is scoring which we are generating. In fact there are great on free tools also available now which can generate AU score for use.For your brand, so we are also right now use.Yeah, we can talk. So now look at it. See, your question is, your question is different. See one is an agent does a search. If it gets a response and like a you're asking it a question, so you have a question and answer and a very layman stuff then that is.GU then the agent can semantically pick up, you know if your content isn't that format, but I think your question is how does it fit into the Google's commercial model.That is how Google makes. So this this will fit, this will fit. So this could be a paid service Google can offer to its client. We can do that, yeah.Yeah, no deck is there, but see he's talking about the Google.That Google search RFI responded that.Yeah, Apnavi, can you can can you go out?",
+    "owner": "Google",
+    "due_date": "",
+    "source_ref": "line_197"
+  },
+  {
+    "item_id": "I68",
+    "item_type": "question",
+    "speaker": "Apnavi Chaturvedi",
+    "text": ":57Explanation and AI friendly formats. So this allows a brand to be retrieved, cited and referenced by AI assistants such as ChatGPT, Google, Gemini, Claude and Perplexity AI. So now in this the recent environment success now shifts from.Clicks to citation, meaning that content can be trusted, understandable and reusable by the AI system. So the solution that we have proposed here is Optiflow AI is our agentic framework that is designed for GEO. So it introduces a new era of content optimization.By moving beyond traditional SEO and focusing on GEO. So this framework improves how AI system discover content, interpret information and generate responses that include your brand. So with AEO answer engine optimization that is basically for systems like Alexa and Siri.So an LLM based technique so organization can significantly improve their visibility in AI driven search environments so.This is our agenda for today. So we have covered right from the opportunity to delivery transformation. I'll just cover the two main important question like why now and what is the solution? Then I'll switch on to the demo. So why we see?Generative engine optimization as a new opportunity. So search has always been a major driver in online businesses. So around you can see the statistic here that around 70% of Fortune 1000 companies invest in SEO.And the market is worth about $100 billion and roughly 43% of e-commerce traffic comes from search. Now with the rise of generative AI tools, business want their brands and products to appear directly in the AI generated answers.So not a platform like Microsoft Copilot and Google AI mode. We have given the examples here. So these are already enabling discovery and transaction directly through AI and this makes GEO a critical new opportunity.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_226"
+  },
+  {
+    "item_id": "I69",
+    "item_type": "risk",
+    "speaker": "Apnavi Chaturvedi",
+    "text": ":14So why is all this now? What is the urgency? So we are at a market shift in how people discover information online. So AI generated answers are increasingly replacing traditional search results, which means companies risk losing visibility, traffic and revenue.So however, this also creates a new opportunity. So organization that adopt to JU early can establish leadership and define best practices similar to those those who were the early adopters during the SU and cloud transformation waves.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_228"
+  },
+  {
+    "item_id": "I70",
+    "item_type": "risk",
+    "speaker": "Apnavi Chaturvedi",
+    "text": ":53So the proposed solution is of the Optiflow. So to address this challenge, we have built Optiflow. This is an agentic AI system designed to optimize content for AI generated search environment. So the process begins with a user query. I'll just quickly switch to the agentic.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_230"
+  },
+  {
+    "item_id": "I71",
+    "item_type": "question",
+    "speaker": "Apnavi Chaturvedi",
+    "text": ":13In both.OK, so this is the GEO agent. So the process begins with the user query and AI agents analyze the customer website content and simulate how AI system would respond to the responses are benchmarked against the competition.And multiple optimization techniques are applied. Finally, this system generates GEO inside optimization artifacts and improvement report. So I'll just quickly show what are the artifacts.OK, so like in this GU optimization framework you see that this is the query that that I have provided and this is a user provided question. So the like the question that I have entered here is which trusted soft.Software solution provider can help to streamline or enterprise operations. You can see this screen, the demo screen. Please if you can confirm. Hello.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_232"
+  },
+  {
+    "item_id": "I72",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": ":32Send me what I need to do.OK.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_235"
+  },
+  {
+    "item_id": "I73",
+    "item_type": "question",
+    "speaker": "Apnavi Chaturvedi",
+    "text": ":22Our framework uses impression metrics. Now these metrics are based on research conducted by experts from Princeton University and IIT Delhi. So the system uses techniques such as cosine similarity, keyword search and keyword overlap. So this helps to overlap evaluate semantic similarity.Relevance to the query, preservation of key terms and factual alignment with original content. So this overall process makes Geo optimization measureable and data-driven. Now if I show you that these are the agents that are working at the back end and at each step these.Nine agents are passing on the information to the to the next agent, so I'll just explain quickly what each agent does here. So the first agent that is the input manager. So this is the first component of of our system and its role is to collect the query.The source link metrics and it organizes the input for processing. Then it triggers the GU workflow. So the system also retrieves four additional sources related to the same query. Now I show you in the live activity. You see these four links here, competitor sources. So these are basically the.Competitor that I mentioned in the starting. So these competitor these acts as a reference sources for comparison. So this is picked by the import manager at the first step. Then this information is passed on to the LLM proxy agent. So this agent uses a language model to.A baseline summary for each sources and these summary act as a reference benchmark for optimization. So finally at this step the output are stored as initial summary and initial score. Now this entire information is passed on to the core optimizer. Now core optimizer has nine.Optimize.Techniques to improve the content of the primary website that we had provided in the source link. So these techniques are like Fluent, GPT, Unique Word, GPT, Authoritative Mind, More Code Mind. So there are 9 techniques. Now meaning of these technique is if I say that it is a fluent.GPT. It improves the readability, so it makes the entire text fluent. It's similarly unique for GPT. It increases vocabulary variety. Now if I say about authoritative mind, it adds some authoritativeness to the text.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_238"
+  },
+  {
+    "item_id": "I74",
+    "item_type": "question",
+    "speaker": "Apnavi Chaturvedi",
+    "text": ":08The technique that is having the highest score so the system record this as the best optimization method, the optimize summary and the score improvement. So this ensures that the framework always select the most effective content version. Now this is part.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_248"
+  },
+  {
+    "item_id": "I75",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": ":22Maybe, maybe you can just talk about this LLM dot EXPFAQ all these things. I think you need to just speed up slightly.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_249"
+  },
+  {
+    "item_id": "I76",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": ":44Versions of the reval classes coming up, new versions of Surface coming up, new products from Google coming up. It you won't need to optimize and change it, but is that right? No, no, that's right.",
+    "owner": "",
+    "due_date": "",
+    "source_ref": "line_257"
+  },
+  {
+    "item_id": "I77",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": ":02The file is accessible, but the contents of the file will not reflect the new product. So today, today, let's say you created this element of text six months ago and you launched Supernova today, so it will not have it. So it will not boost Supernova, right? But.",
+    "owner": "file",
+    "due_date": "",
+    "source_ref": "line_259"
+  },
+  {
+    "item_id": "I78",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": ":20You know, the reason we thought we will do this is very simple, that there is a science behind it and that the standards are evolving.We've not seen this being talked with in the competition when we bring it up to our customers in the discussion.",
+    "owner": "we",
+    "due_date": "",
+    "source_ref": "line_261"
+  },
+  {
+    "item_id": "I79",
+    "item_type": "action_item",
+    "speaker": "Govind Chandranani - ERS, HCL Tech",
+    "text": ":12I think it's unique in terms of getting the proposition done, but I want to take a pause. I think, you know, I see a general tiredness in in the room. Yeah, so.Oh, that the customer will. Yes, you have a scoring mechanism. Yeah, yeah, there's scoring. She was talking about that. Yeah. So there are various mechanic to score and then push this out. But you will get more details. The point of contact for this is Atul, but I just wanted to take a pause to make sure that you understand, you know.See, we spent close to about four hours today on just AI. The objective was that it is very difficult to get all of you into the same room and captive audience, 70% captive audience. You know you can get, you can have the.Laptop shut down, but not the phone shut down unfortunately. So which is fine. You're not running a school here, but the idea is for you to give pointers to say that if you face something similar, at least you would know people to get it to.I'll say that one last time. It's not a question of if it is a question of when. If you're ahead of the curve on the when, there are some bird fingers here, right? We can talk if you, you know in the evening when you get a.Think for yourself. Talk to people. Sameer. We'll tell you how Microsoft is really ahead. The work that they are doing is super good. Unfortunately, Microsoft has asked us to do that work. And how Nathan is going to the brunt of it. We were.Auto part.Not as past.And it's gonna come in in many, various other places. So trust me, it's not if it's well, so adopt embrace and at least you will get a startup pick.OK, so so just, uh, Apnavi, uh, Rohit and Raju. Yeah, all right, Raju. Yeah, he's dropped off. Raju stay. No, he's not there. It's not there. OK, Apnavi, Raju.",
+    "owner": "customer",
+    "due_date": "",
+    "source_ref": "line_265"
+  }
+]

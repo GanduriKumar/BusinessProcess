@@ -24,3 +24,4 @@ Reusable capabilities live in subfolders under `skills/`.
 - `business-financial-analysis`: revenue, cost, margin, pricing, forecast, and business-case analysis.
 - `operational-data-analysis`: delivery, staffing, service, backlog, SLA, and productivity analysis.
 - `internal-leadership-storytelling`: 12-step internal leadership storytelling for solution positioning, approval narratives, and delivery-leadership decks.
+- `action-item-extractor`: action items, decisions, owners, and executive follow-ups from meeting transcripts, especially Teams transcripts.

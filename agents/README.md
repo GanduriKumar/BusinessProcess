@@ -24,6 +24,7 @@ This folder contains agent definitions.
 - `finance-reviewer`: repo-level finance and business-case reviewer; pairs with `skills/business-financial-analysis`.
 - `ops-reviewer`: repo-level operational analysis and delivery-review agent; pairs with `skills/operational-data-analysis`.
 - `leadership-storyteller`: repo-level internal solution-storytelling lead; pairs with `skills/internal-leadership-storytelling`.
+- `action-item-reviewer`: repo-level Teams transcript and meeting follow-up reviewer; pairs with `skills/action-item-extractor`.
 
 Each active agent now includes:
 
