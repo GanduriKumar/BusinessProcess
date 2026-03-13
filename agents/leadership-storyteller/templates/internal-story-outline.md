@@ -2,9 +2,9 @@
 
 Default companion template:
 
-- `skills/internal-leadership-storytelling/templates/FigmaToCodeAIAgentFramework.pdf`
+- `skills/internal-leadership-storytelling/templates/FigmaToCodeAIAgentFramework.pptx`
 
-Use the PDF as the framing reference for the solution narrative, then apply this outline as the working story structure.
+Use the PPTX as the primary framing reference for the solution narrative, then apply this outline as the working story structure.
 
 1. Executive takeaway
 2. Real delivery challenge

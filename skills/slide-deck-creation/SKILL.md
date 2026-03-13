@@ -31,6 +31,8 @@ Build slide decks that are easy to scan, decision-oriented, visually intentional
 - If the user needs a reusable or repeatable deck, generate it programmatically.
 - If the repo already has a generator pattern, reuse it.
 - Keep scripts and outputs together.
+- Use `scripts/init_business_deck.py` when a clean business deck can be built from a simple JSON slide outline.
+- Use `scripts/extract_slide_text.py` when you need to inspect or review an existing PPTX quickly.
 
 ### 4. Tighten for executives
 

@@ -7,7 +7,7 @@ from pptx.enum.text import MSO_ANCHOR, PP_ALIGN
 from pptx.util import Inches, Pt
 
 
-OUTPUT = Path(r"C:\Users\kumar.gn\HCLProjects\BusinessProcess\peer-leader-introduction-kumargn-simplified-v2.pptx")
+OUTPUT = Path(r"C:\Users\kumar.gn\HCLProjects\BusinessProcess\docs\output\peer-leader-introduction-kumargn-simplified-v2.pptx")
 
 BG = RGBColor(244, 247, 251)
 TEXT = RGBColor(15, 23, 42)

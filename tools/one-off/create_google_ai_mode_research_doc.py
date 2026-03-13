@@ -4,7 +4,7 @@ import zipfile
 
 
 OUTPUT = Path(
-    r"C:\Users\kumar.gn\HCLProjects\BusinessProcess\docs\Google Search GEO Research.docx"
+    r"C:\Users\kumar.gn\HCLProjects\BusinessProcess\docs\output\Google Search GEO Research.docx"
 )
 TITLE = "How GEO Helps, If At All, In Google Search"
 SUBTITLE = (

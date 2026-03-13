@@ -8,7 +8,7 @@ from pptx.util import Inches, Pt
 
 
 OUTPUT = Path(
-    r"C:\Users\kumar.gn\HCLProjects\BusinessProcess\docs\OptiFlow - Provider Mapping and Buyer Split Slide.pptx"
+    r"C:\Users\kumar.gn\HCLProjects\BusinessProcess\docs\output\OptiFlow - Provider Mapping and Buyer Split Slide.pptx"
 )
 
 SLIDE_W = Inches(13.333)

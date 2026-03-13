@@ -13,8 +13,8 @@ from pptx.enum.text import PP_ALIGN, MSO_ANCHOR
 from pptx.util import Inches, Pt
 
 
-WORKBOOK = Path(r"C:\users\kumar.gn\HClProjects\BusinessProcess\CUNB-2 Mar'26 V.1.xlsx")
-OUTPUT = Path(r"C:\users\kumar.gn\HClProjects\BusinessProcess\CUNB Exec Review - L3 Account Movement Mar 2026.pptx")
+WORKBOOK = Path(r"C:\users\kumar.gn\HClProjects\BusinessProcess\docs\input\CUNB-2 Mar'26 V.1.xlsx")
+OUTPUT = Path(r"C:\users\kumar.gn\HClProjects\BusinessProcess\docs\output\CUNB Exec Review - L3 Account Movement Mar 2026.pptx")
 
 NS = {
     "m": "http://schemas.openxmlformats.org/spreadsheetml/2006/main",

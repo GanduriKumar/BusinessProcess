@@ -27,6 +27,8 @@ Convert customer requirements into a response that is compliant, specific, easy 
 - Extract explicit requirements, deadlines, mandatory formats, page limits, and evaluation criteria.
 - Build a response map with question ID, source requirement, owner, and draft status.
 - Separate must-answer items from optional value-add content.
+- Use `scripts/extract_rfp_questions.py` for a first-pass extraction from DOCX, XLSX, TXT, or Markdown sources when the questionnaire is large.
+- Use `scripts/build_compliance_matrix.py` to turn extracted items into a working compliance tracker.
 
 ### 2. Build the answer strategy
 
@@ -77,3 +79,8 @@ Use this shape unless the customer template dictates otherwise:
 
 - Shared standard: [business-work-common](../business-work-common/SKILL.md)
 - Checklist: [references/rfp-response-checklist.md](references/rfp-response-checklist.md)
+
+## Useful Scripts
+
+- `scripts/extract_rfp_questions.py`: extracts likely questions or requirements from common source files into JSON or CSV.
+- `scripts/build_compliance_matrix.py`: converts extracted items into a compliance matrix you can review and complete.

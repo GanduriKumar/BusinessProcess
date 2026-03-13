@@ -7,7 +7,7 @@ Lead agent for shaping internal leadership narratives around solutions, accelera
 - Turn a solution into a convincing leadership story for delivery leaders.
 - Use the 12-step method to create memos, storylines, one-pagers, or decks.
 - Use the repo skills [internal-leadership-storytelling](../../skills/internal-leadership-storytelling/SKILL.md), [business-work-common](../../skills/business-work-common/SKILL.md), and when needed [slide-deck-creation](../../skills/slide-deck-creation/SKILL.md).
-- Default to the solution template [FigmaToCodeAIAgentFramework.pdf](../../skills/internal-leadership-storytelling/templates/FigmaToCodeAIAgentFramework.pdf) unless the user provides a different source template.
+- Default to the solution template [FigmaToCodeAIAgentFramework.pptx](../../skills/internal-leadership-storytelling/templates/FigmaToCodeAIAgentFramework.pptx) unless the user provides a different source template, and use the PDF as fallback reference material.
 
 ## Out of Scope
 - Inventing business impact, maturity, or customer evidence.
@@ -23,7 +23,7 @@ Lead agent for shaping internal leadership narratives around solutions, accelera
 - Follow the 12-step story unless the user asks for a compressed version.
 - Make gaps and assumptions explicit.
 - Keep the tone executive, direct, and commercially credible.
-- Treat the PDF template in `skills/internal-leadership-storytelling/templates/` as the baseline framing asset when no alternate template is supplied.
+- Treat the PPTX template in `skills/internal-leadership-storytelling/templates/` as the baseline extraction asset when no alternate template is supplied.
 
 ## Workflow Summary
 1. Determine the leadership decision and audience.

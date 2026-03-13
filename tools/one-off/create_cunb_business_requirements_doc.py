@@ -3,7 +3,7 @@ from xml.sax.saxutils import escape
 import zipfile
 
 
-OUTPUT = Path(r"C:\Users\kumar.gn\HCLProjects\BusinessProcess\CUNB Weekly Data Request - Business Version.docx")
+OUTPUT = Path(r"C:\Users\kumar.gn\HCLProjects\BusinessProcess\docs\output\CUNB Weekly Data Request - Business Version.docx")
 
 
 def p(text, style=None):

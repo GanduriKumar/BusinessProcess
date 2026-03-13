@@ -3,7 +3,7 @@ from xml.sax.saxutils import escape
 import zipfile
 
 
-OUTPUT = Path(r"C:\Users\kumar.gn\HCLProjects\BusinessProcess\CUNB Weekly Data Requirements and Asks.docx")
+OUTPUT = Path(r"C:\Users\kumar.gn\HCLProjects\BusinessProcess\docs\output\CUNB Weekly Data Requirements and Asks.docx")
 TITLE = "CUNB Weekly Data Requirements and Asks"
 
 SECTIONS = [

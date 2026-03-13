@@ -4,7 +4,7 @@ import zipfile
 
 
 OUTPUT = Path(
-    r"C:\Users\kumar.gn\HCLProjects\BusinessProcess\docs\RFP Template Placement and Invocation Guide.docx"
+    r"C:\Users\kumar.gn\HCLProjects\BusinessProcess\docs\output\RFP Template Placement and Invocation Guide.docx"
 )
 
 TITLE = "RFP Template Placement and Invocation Guide"
@@ -28,31 +28,51 @@ body = [p(TITLE, "Title"), p(SUBTITLE, "Subtitle")]
 body.append(p("1. Where to add the RFP template and how to reference it", "Heading1"))
 body.append(
     p(
-        "If the template is the structure that the proposal-manager agent should follow while drafting responses, the best default location is under the agent template folder:"
-    )
-)
-body.append(p("- C:\\Users\\kumar.gn\\HCLProjects\\BusinessProcess\\agents\\proposal-manager\\templates\\"))
-body.append(
-    p(
-        "For example, if you have a standard response shape, place it as a Markdown or Word file in that folder, such as:"
+        "The right location depends on whether the template is skill-specific or agent-specific."
     )
 )
 body.append(
     p(
-        r"- C:\Users\kumar.gn\HCLProjects\BusinessProcess\agents\proposal-manager\templates\customer-rfp-response-template.md"
+        "Use the skill directory when the template is part of the reusable RFP capability itself and should apply regardless of which repo-level agent is driving the work."
+    )
+)
+body.append(p("- Recommended skill location: C:\\Users\\kumar.gn\\HCLProjects\\BusinessProcess\\skills\\rfp-response\\templates\\"))
+body.append(
+    p(
+        "Example skill-specific template path:"
     )
 )
 body.append(
     p(
-        "Use the agent folder when the template is meant to guide proposal-manager specifically. This keeps the template close to the repo-level agent that will apply it."
+        "- C:\\Users\\kumar.gn\\HCLProjects\\BusinessProcess\\skills\\rfp-response\\templates\\customer-rfp-response-template.docx"
     )
 )
 body.append(
     p(
-        "If the template is a broader reusable pattern that should apply to all RFP work regardless of agent, also link it from the skill:"
+        "Use the agent directory only when the template is specific to how one repo-level agent packages or presents the response, and not to the RFP skill overall."
     )
 )
-body.append(p(r"- C:\Users\kumar.gn\HCLProjects\BusinessProcess\skills\rfp-response\SKILL.md"))
+body.append(p("- Agent-specific location: C:\\Users\\kumar.gn\\HCLProjects\\BusinessProcess\\agents\\proposal-manager\\templates\\"))
+body.append(
+    p(
+        "Example agent-specific template path:"
+    )
+)
+body.append(
+    p(
+        "- C:\\Users\\kumar.gn\\HCLProjects\\BusinessProcess\\agents\\proposal-manager\\templates\\proposal-manager-packaging-template.md"
+    )
+)
+body.append(
+    p(
+        "Recommended location in most cases: store the customer or response template in the skill directory, not the agent directory."
+    )
+)
+body.append(
+    p(
+        "Reason: an RFP response template is usually a task-level asset. It belongs to the reusable RFP capability and should be available whether the response is driven by proposal-manager or by any future agent that uses the same skill."
+    )
+)
 body.append(
     p(
         "Recommended setup:"
@@ -60,32 +80,37 @@ body.append(
 )
 body.append(
     p(
-        "- Store the template file under agents/proposal-manager/templates/ as the operational source used by the repo-level agent."
+        "- Store the primary customer response template under skills/rfp-response/templates/."
     )
 )
 body.append(
     p(
-        "- Add a pointer to that template in agents/proposal-manager/AGENT.md or agents/proposal-manager/workflows/rfp-delivery.md so the agent instructions mention it explicitly."
+        "- Reference that template from skills/rfp-response/SKILL.md as the default template for this skill."
     )
 )
 body.append(
     p(
-        "- Add a short reference in skills/rfp-response/SKILL.md so the task-level skill also knows that a repo template exists."
+        "- If proposal-manager should use it by default, add a pointer in agents/proposal-manager/AGENT.md or agents/proposal-manager/workflows/rfp-delivery.md to the skill-level template path."
     )
 )
 body.append(
     p(
-        "A practical instruction line in the agent or workflow can look like this:"
+        "- Use the agent templates folder only for agent-specific wrappers, review formats, or packaging structures."
     )
 )
 body.append(
     p(
-        "Use the response template at agents/proposal-manager/templates/customer-rfp-response-template.md when drafting proposal responses unless the user provides a different customer-issued format."
+        "A practical instruction line in the skill or agent can look like this:"
     )
 )
 body.append(
     p(
-        "If the customer gives a DOCX or XLSX response form, store that file in the same templates folder and reference the exact file path in the request so the agent can work from the correct structure."
+        "Use the response template at skills/rfp-response/templates/customer-rfp-response-template.docx when drafting proposal responses unless the user provides a different customer-issued format."
+    )
+)
+body.append(
+    p(
+        "If the customer gives a DOCX or XLSX response form, store that file under the skill templates folder and reference the exact file path in the request so the skill and agent both use the same source of truth."
     )
 )
 
@@ -116,7 +141,7 @@ body.append(
 )
 body.append(
     p(
-        "Use proposal-manager to create an RFP response from C:\\Users\\kumar.gn\\HCLProjects\\BusinessProcess\\docs\\customer-rfp.docx. Use the template at C:\\Users\\kumar.gn\\HCLProjects\\BusinessProcess\\agents\\proposal-manager\\templates\\customer-rfp-response-template.md. Produce a first draft in DOCX and include a compliance-gap list."
+        "Use proposal-manager to create an RFP response from C:\\Users\\kumar.gn\\HCLProjects\\BusinessProcess\\docs\\input\\customer-rfp.docx. Use the template at C:\\Users\\kumar.gn\\HCLProjects\\BusinessProcess\\skills\\rfp-response\\templates\\customer-rfp-response-template.docx. Produce a first draft in DOCX and include a compliance-gap list."
     )
 )
 body.append(

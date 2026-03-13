@@ -97,7 +97,12 @@ For a reusable checklist, read [references/output-standards.md](references/outpu
 - Reuse existing scripts and prior deliverables when they materially accelerate the task.
 - Preserve the repo's existing style where a family of outputs already exists.
 - If generating decks or documents programmatically, keep the generator script with the output.
-- Save final business artifacts in a predictable location such as `docs/` unless the user specifies otherwise.
+- Use `docs/input/` for source business files that should be consumed by workflows and scripts.
+- Save final business artifacts in `docs/output/` unless the user specifies otherwise.
+
+## Useful Scripts
+
+- `scripts/create_simple_docx.py`: reusable OpenXML-based DOCX generator for simple business documents from a JSON section spec.
 
 ## Escalation Rules
 

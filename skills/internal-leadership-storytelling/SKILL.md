@@ -9,9 +9,11 @@ Use this skill for internal solution storytelling aimed at delivery leadership. 
 
 Default template/reference asset for this skill:
 
+- [templates/FigmaToCodeAIAgentFramework.pptx](templates/FigmaToCodeAIAgentFramework.pptx)
 - [templates/FigmaToCodeAIAgentFramework.pdf](templates/FigmaToCodeAIAgentFramework.pdf)
 
-When the user asks for an internal leadership story on this solution and does not provide a different template, use this PDF as the default source for structure, positioning context, and solution framing.
+When the user asks for an internal leadership story on this solution and does not provide a different template, use the PPTX version as the default extraction source and the PDF as a fallback reference asset.
+- Use `scripts/extract_story_template.py` when you need a first-pass text extraction or a 12-step JSON mapping from the default PPTX or PDF.
 
 ## Primary Goal
 
@@ -52,7 +54,7 @@ For the detailed question set, read [references/leadership-storytelling-12-step.
 - Is leadership being asked to approve, sponsor, fund, pilot, or scale the solution?
 - Who is the primary audience: delivery leaders, account leaders, CTO office, vertical leadership, or internal innovation stakeholders?
 - What output is needed: memo, storyline, one-pager, or slide deck?
-- If no alternate template is provided, read [templates/FigmaToCodeAIAgentFramework.pdf](templates/FigmaToCodeAIAgentFramework.pdf) and align the narrative to that solution context.
+- If no alternate template is provided, read [templates/FigmaToCodeAIAgentFramework.pptx](templates/FigmaToCodeAIAgentFramework.pptx) first and use the PDF only as fallback reference material.
 
 ### 2. Build the story from the operating problem
 
@@ -94,4 +96,9 @@ Use this structure unless the user requests a different format:
 - Shared business standard: [business-work-common](../business-work-common/SKILL.md)
 - Related presentation skill: [slide-deck-creation](../slide-deck-creation/SKILL.md)
 - Detailed method: [references/leadership-storytelling-12-step.md](references/leadership-storytelling-12-step.md)
+- Default solution template: [templates/FigmaToCodeAIAgentFramework.pptx](templates/FigmaToCodeAIAgentFramework.pptx)
 - Default solution template: [templates/FigmaToCodeAIAgentFramework.pdf](templates/FigmaToCodeAIAgentFramework.pdf)
+
+## Useful Scripts
+
+- `scripts/extract_story_template.py`: extracts readable text from the default PPTX or PDF template and can emit a first-pass 12-step JSON mapping.

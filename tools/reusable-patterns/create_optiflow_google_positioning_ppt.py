@@ -8,7 +8,7 @@ from pptx.util import Inches, Pt
 
 
 OUTPUT = Path(
-    r"C:\Users\kumar.gn\HCLProjects\BusinessProcess\docs\OptiFlow - Google Compatible Positioning Mar 2026.pptx"
+    r"C:\Users\kumar.gn\HCLProjects\BusinessProcess\docs\output\OptiFlow - Google Compatible Positioning Mar 2026.pptx"
 )
 
 SLIDE_W = Inches(13.333)
