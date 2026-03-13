@@ -11,18 +11,20 @@ from pptx.util import Inches, Pt
 
 OUT_PATH = Path(__file__).resolve().parents[1] / "templates" / "Executive Review Action Item Template.pptx"
 
-# HCLTech-inspired palette using the brand's red-led identity with dark navy support.
-BG = RGBColor(246, 246, 248)
-NAVY = RGBColor(17, 25, 39)
-INK = RGBColor(31, 41, 55)
-MUTED = RGBColor(99, 115, 129)
-HCL_RED = RGBColor(227, 24, 55)
-HCL_RED_DARK = RGBColor(191, 18, 48)
-STEEL = RGBColor(70, 86, 105)
-SLATE = RGBColor(228, 232, 238)
+# Public sources used:
+# - HCLTech logo usage guidance: HCL blue, white, black
+# - HCL brand manual: HCL Blue #006BB6, Black #0D0D0D, White #FFFFFF
+BG = RGBColor(245, 245, 245)
+NAVY = RGBColor(0, 107, 182)  # HCL Blue
+INK = RGBColor(13, 13, 13)    # Brand black
+MUTED = RGBColor(95, 95, 95)
+HCL_BLUE = RGBColor(0, 107, 182)
+HCL_BLUE_DARK = RGBColor(5, 120, 195)
+STEEL = RGBColor(70, 150, 210)
+SLATE = RGBColor(210, 210, 210)
 WHITE = RGBColor(255, 255, 255)
-SOFT_RED = RGBColor(252, 234, 238)
-SOFT_STEEL = RGBColor(236, 241, 246)
+SOFT_BLUE = RGBColor(180, 225, 250)
+SOFT_STEEL = RGBColor(235, 235, 235)
 
 
 def set_bg(slide) -> None:
@@ -90,27 +92,18 @@ def build_slide(prs: Presentation) -> None:
     slide = prs.slides.add_slide(prs.slide_layouts[6])
     set_bg(slide)
 
-    add_panel(slide, Inches(0), Inches(0), Inches(13.333), Inches(0.2), HCL_RED)
-    add_panel(slide, Inches(0.55), Inches(0.48), Inches(1.72), Inches(0.24), HCL_RED, True)
+    add_panel(slide, Inches(0), Inches(0), Inches(13.333), Inches(0.2), HCL_BLUE)
+    add_panel(slide, Inches(0.55), Inches(0.48), Inches(1.72), Inches(0.24), HCL_BLUE, True)
     add_textbox(slide, Inches(0.72), Inches(0.5), Inches(1.1), Inches(0.18), "EXEC REVIEW", 10, WHITE, True, PP_ALIGN.CENTER)
     add_textbox(slide, Inches(0.62), Inches(0.86), Inches(7.8), Inches(0.5), "Leadership Questions, Intent, and Follow-up Actions", 24, NAVY, True)
-    add_textbox(
-        slide,
-        Inches(0.62),
-        Inches(1.35),
-        Inches(7.9),
-        Inches(0.38),
-        "Single-slide format for turning transcript extraction into an HCLTech-style leadership review frame.",
-        11,
-        MUTED,
-    )
+    add_textbox(slide, Inches(0.62), Inches(1.35), Inches(7.9), Inches(0.38), "Single-slide format for turning transcript extraction into an HCLTech leadership review frame.", 11, MUTED)
 
-    add_chip(slide, Inches(8.72), Inches(0.78), Inches(1.2), "Critical asks", "03", HCL_RED)
+    add_chip(slide, Inches(8.72), Inches(0.78), Inches(1.2), "Critical asks", "03", HCL_BLUE)
     add_chip(slide, Inches(10.03), Inches(0.78), Inches(1.2), "Open items", "04", STEEL)
-    add_chip(slide, Inches(11.34), Inches(0.78), Inches(1.2), "Risks", "02", HCL_RED_DARK)
+    add_chip(slide, Inches(11.34), Inches(0.78), Inches(1.2), "Risks", "02", HCL_BLUE_DARK)
 
     add_panel(slide, Inches(0.62), Inches(1.95), Inches(2.65), Inches(4.95), NAVY, True)
-    add_textbox(slide, Inches(0.9), Inches(2.22), Inches(1.9), Inches(0.18), "Meeting Signal", 11, HCL_RED, True)
+    add_textbox(slide, Inches(0.9), Inches(2.22), Inches(1.9), Inches(0.18), "Meeting Signal", 11, SOFT_BLUE, True)
     add_textbox(slide, Inches(0.9), Inches(2.52), Inches(2.02), Inches(0.92), "What leaders are really asking for", 22, WHITE, True)
     add_bullets(
         slide,
@@ -126,7 +119,7 @@ def build_slide(prs: Presentation) -> None:
         size=12,
         color=WHITE,
     )
-    add_panel(slide, Inches(0.92), Inches(5.98), Inches(1.95), Inches(0.45), HCL_RED, True)
+    add_panel(slide, Inches(0.92), Inches(5.98), Inches(1.95), Inches(0.45), HCL_BLUE, True)
     add_textbox(slide, Inches(1.0), Inches(6.11), Inches(1.78), Inches(0.14), "Replace with meeting headline", 8, WHITE, True, PP_ALIGN.CENTER)
 
     add_panel(slide, Inches(3.45), Inches(1.95), Inches(9.22), Inches(4.95), WHITE, True)
@@ -150,7 +143,7 @@ def build_slide(prs: Presentation) -> None:
             "State current support, exclusions, and next experiment path.",
             "Owner",
             "Date",
-            ("Open", HCL_RED, False),
+            ("Open", HCL_BLUE, False),
         ),
         (
             "For SaaS solutions in the market, what is the workflow?",
@@ -166,7 +159,7 @@ def build_slide(prs: Presentation) -> None:
             "Bring baseline, method, and before/after metrics on one slide.",
             "Owner",
             "Date",
-            ("Proof", HCL_RED_DARK, False),
+            ("Proof", HCL_BLUE_DARK, False),
         ),
     ]
 
@@ -184,7 +177,7 @@ def build_slide(prs: Presentation) -> None:
     add_panel(slide, Inches(3.7), Inches(6.22), Inches(4.18), Inches(0.46), SOFT_STEEL, True)
     add_textbox(slide, Inches(3.88), Inches(6.34), Inches(3.78), Inches(0.14), "Best use: limit the review to the 3 questions that should change the next meeting.", 9, NAVY, True)
 
-    add_panel(slide, Inches(8.12), Inches(6.22), Inches(4.3), Inches(0.46), SOFT_RED, True)
+    add_panel(slide, Inches(8.12), Inches(6.22), Inches(4.3), Inches(0.46), SOFT_BLUE, True)
     add_textbox(slide, Inches(8.3), Inches(6.34), Inches(3.9), Inches(0.14), "Rewrite raw transcript wording into short business language before using this slide.", 9, NAVY, True)
 
 
