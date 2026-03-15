@@ -53,6 +53,7 @@ target/
 *.xlsx
 *.cmd
 *.pid
+*.html
 
 # .NET
 bin/
