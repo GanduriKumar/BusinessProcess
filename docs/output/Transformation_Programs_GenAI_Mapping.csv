@@ -1,0 +1,18 @@
+Sl.No,Program Name - from pptx file,GenAI solution - from Excel sheet,Match Confidence
+1,Design to Code Generation - Digital,"Figma-to-Code Plugin (Proposed) - Proposed plugin to convert Figma designs (image or link) and UI component mapping into Angular code, automating boilerplate generation.",High
+2,AI Code Review Bot,Code Change Analysis Tool (Proposed) - AI tool to analyze code changes and recommend risk-based testing,High
+3,Regulatory Report Processing,Legal Compliance Checks (LPM) - Uses screen scraping and LLMs to extract and analyze regulatory changes from public sites and PDFs for compliance.,Medium
+4,Prompt Library,Reusable Prompt Template Library - Creation of reusable prompt templates for software engineering and testing.,High
+5,Tibco Document Generator,No clear match identified,Low
+6,Vulnerability Assessment and Resolution,No clear match identified,Low
+7,Gen AI Based Unit Testing - Digital,No clear match identified,Low
+8,Fixathon,No clear match identified,Low
+9,R3 Feature Extraction,No clear match identified,Low
+10,Intelligent Compliance Email Automation,No clear match identified,Low
+11,Run deck Automation,No clear match identified,Low
+12,Agentic Self Healing of WIMM Issues,Auto-Fix Framework for Data Support - Auto-Fix Framework for Data Support,Medium
+13,DILO Analysis,No clear match identified,Low
+14,Certificate Management,No clear match identified,Low
+15,Optibot NeoX Mobile App,No clear match identified,Low
+16,Service now Chat and Service now Virtual agent,"Knowledge Navigator - Agentic AI combining transcribe, chatbot, risk predictor, ServiceNow",High
+17,WorkBlaze,Auto-Fix Framework for Data Support - Auto-Fix Framework for Data Support,Low

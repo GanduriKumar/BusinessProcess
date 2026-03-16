@@ -54,6 +54,7 @@ target/
 *.cmd
 *.pid
 *.html
+*.pdf
 
 # .NET
 bin/

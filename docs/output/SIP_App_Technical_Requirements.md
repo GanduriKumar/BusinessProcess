@@ -24,7 +24,6 @@ The application must help support teams:
 - provide role-based views for engineers, managers, and later client-facing users
 - dynamically assemble the right UI patterns, workflows, and context panels for each support scenario
 
-The system must be designed so that AI-driven capabilities are modular and governed, not tightly coupled to a single UI flow, model provider, or ticketing platform.
 
 ## 3. Scope
 
@@ -32,7 +31,6 @@ The system must be designed so that AI-driven capabilities are modular and gover
 
 - React single-page web application
 - Python backend exposing versioned REST APIs
-- Authentication and role-based authorization
 - Ticket intake abstraction layer for multiple ticketing systems
 - Support workflow orchestration for ticket enrichment and investigation support
 - Knowledge retrieval and context assembly
@@ -44,6 +42,7 @@ The system must be designed so that AI-driven capabilities are modular and gover
 
 ### 3.2 Out of Scope for Initial Release
 
+- Authentication and role-based authorization
 - Native mobile application
 - Autonomous ticket resolution without human approval
 - Deep workflow customization by end users without admin controls
