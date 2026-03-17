@@ -28,3 +28,5 @@ Reusable capabilities live in subfolders under `skills/`.
 - `design-to-code-solution`: design-to-code solution positioning, workflow explanation, scope clarification, and leadership/client review support.
 - `cua-testing`: computer-using-agent testing solution review, reliability explanation, cost and rollout analysis, and review support.
 - `geo-optiflow`: GEO / OptiFlow positioning, platform-fit analysis, business-model alignment, and review support.
+- `model-eval-watch`: recurring tracking of AI model evaluation and agent evaluation updates, daily watch outputs, and weekly markdown digests under `docs/output/modelevals`.
+- `career-positioning`: turns career assessments and positioning reviews into post topics, authority assets, and monetizable service offers.

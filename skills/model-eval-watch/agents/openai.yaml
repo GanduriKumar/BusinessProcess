@@ -1,0 +1,4 @@
+interface:
+  display_name: "Model Eval Watch"
+  short_description: "Track model and agent eval updates"
+  default_prompt: "Use $model-eval-watch to track AI model evaluation and agent evaluation updates and create the weekly markdown digest."

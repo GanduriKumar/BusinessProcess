@@ -1,0 +1,6 @@
+name: career-positioning-strategist
+owner: repo
+default_assessment: docs/output/personal/GenAI_Career_Extension_Assessment_Potato_Mode.html
+default_output_dir: docs/output/personal
+market_benchmark: skills/career-positioning/references/vp-svp-job-market-benchmark-2026-03.md
+skill: skills/career-positioning

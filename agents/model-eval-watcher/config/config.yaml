@@ -1,0 +1,7 @@
+name: model-eval-watcher
+owner: repo
+outputs_dir: docs/output/modelevals
+watch_script: tools/one-off/run_model_eval_watch.py
+weekly_digest_script: tools/one-off/generate_model_eval_weekly_digest.py
+daily_runner: tools/one-off/run_model_eval_watch_and_weekly_digest_daily.ps1
+root_launcher: run_model_eval_watch.ps1

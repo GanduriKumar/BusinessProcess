@@ -28,6 +28,8 @@ This folder contains agent definitions.
 - `design-to-code-lead`: repo-level design-to-code solution lead; pairs with `skills/design-to-code-solution`.
 - `cua-testing-lead`: repo-level CUA testing solution lead; pairs with `skills/cua-testing`.
 - `geo-optiflow-lead`: repo-level GEO / OptiFlow solution lead; pairs with `skills/geo-optiflow`.
+- `model-eval-watcher`: repo-level AI model-evaluation and agent-evaluation watch lead; uses repo scripts under `tools/one-off`.
+- `career-positioning-strategist`: repo-level personal positioning and offer-design lead; pairs with `skills/career-positioning`.
 
 Each active agent now includes:
 

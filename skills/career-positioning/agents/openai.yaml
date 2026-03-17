@@ -1,0 +1,4 @@
+interface:
+  display_name: "Career Positioning"
+  short_description: "Turn assessments into posts and offers"
+  default_prompt: "Use $career-positioning to turn my career assessment into specific positioning topics, assets, and service offers."
