@@ -1,0 +1,65 @@
+# Agentic AI Watch Digest
+
+- Generated at: 2026-03-17 21:20:25 India Standard Time
+- Items included: 10
+- Ordering: Latest published items first.
+
+## 1. Optionally skip approval for Copilot coding agent Actions workflows
+- Source: GitHub Changelog - Copilot
+- Published: Fri, 13 Mar 2026 18:14:48 +0000
+- URL: https://github.blog/changelog/2026-03-13-optionally-skip-approval-for-copilot-coding-agent-actions-workflows
+- Summary: When Copilot coding agent opens a pull request or pushes changes, Copilot is treated like an outside contributor in an open source project. GitHub Actions workflows do not run until… The post Optionally skip approval for Copilot coding agent Actions workflows appeared first on The GitHub Blog .
+
+## 2. Updates to GitHub Copilot for students
+- Source: GitHub Changelog - Copilot
+- Published: Fri, 13 Mar 2026 13:54:32 +0000
+- URL: https://github.blog/changelog/2026-03-13-updates-to-github-copilot-for-students
+- Summary: Starting today, students with GitHub Education benefits are now on the new GitHub Copilot Student plan. As part of this transition, we’ve updated the available model lineup. The new GitHub… The post Updates to GitHub Copilot for students appeared first on The GitHub Blog .
+
+## 3. Copilot auto model selection is generally available in JetBrains IDEs
+- Source: GitHub Changelog - Copilot
+- Published: Thu, 12 Mar 2026 15:54:33 +0000
+- URL: https://github.blog/changelog/2026-03-12-copilot-auto-model-selection-is-generally-available-in-jetbrains-ides
+- Summary: GitHub Copilot auto model selection is now generally available in JetBrains IDEs for all Copilot plans. With auto, Copilot chooses a model on your behalf based on real-time model availability… The post Copilot auto model selection is generally available in JetBrains IDEs appeared first on The GitHub Blog .
+
+## 4. Continuous AI for accessibility: How GitHub transforms feedback into inclusion
+- Source: GitHub Blog - Copilot
+- Published: March 12, 2026
+- URL: https://github.blog/ai-and-ml/github-copilot/continuous-ai-for-accessibility-how-github-transforms-feedback-into-inclusion/
+- Summary: AI automates triage for accessibility feedback, allowing us to focus on fixing barriers—turning a chaotic backlog into continuous, rapid resolutions.
+
+## 5. Request Copilot code review from GitHub CLI
+- Source: GitHub Changelog - Copilot
+- Published: Wed, 11 Mar 2026 18:11:51 +0000
+- URL: https://github.blog/changelog/2026-03-11-request-copilot-code-review-from-github-cli
+- Summary: You can now request a review from GitHub Copilot directly from your terminal using the GitHub CLI. Whether you’re editing an existing pull request or creating a new one, Copilot… The post Request Copilot code review from GitHub CLI appeared first on The GitHub Blog .
+
+## 6. Major agentic capabilities improvements in GitHub Copilot for JetBrains IDEs
+- Source: GitHub Changelog - Copilot
+- Published: Wed, 11 Mar 2026 16:40:03 +0000
+- URL: https://github.blog/changelog/2026-03-11-major-agentic-capabilities-improvements-in-github-copilot-for-jetbrains-ides
+- Summary: This update brings several new features and improvements to GitHub Copilot in JetBrains IDEs. Core agentic capabilities, including custom agents, sub-agents, and plan agent, are now generally available, with agent… The post Major agentic capabilities improvements in GitHub Copilot for JetBrains IDEs appeared first on The GitHub Blog .
+
+## 7. Explore a repository using Copilot on the web
+- Source: GitHub Changelog - Copilot
+- Published: Wed, 11 Mar 2026 13:43:49 +0000
+- URL: https://github.blog/changelog/2026-03-11-explore-a-repository-using-copilot-on-the-web
+- Summary: We’ve made it easier to explore a repository’s file structure when you chat with Copilot on the web. What’s changed Developers can now ask Copilot to show a file, then… The post Explore a repository using Copilot on the web appeared first on The GitHub Blog .
+
+## 8. The era of “AI as text” is over. Execution is the new interface.
+- Source: GitHub Blog - Copilot
+- Published: March 10, 2026
+- URL: https://github.blog/ai-and-ml/github-copilot/the-era-of-ai-as-text-is-over-execution-is-the-new-interface/
+- Summary: AI is shifting from prompt-response interactions to programmable execution. See how the GitHub Copilot SDK enables agentic workflows directly inside your applications.
+
+## 9. Figma MCP server can now generate design layers from VS Code
+- Source: GitHub Changelog - Copilot
+- Published: Fri, 06 Mar 2026 21:20:15 +0000
+- URL: https://github.blog/changelog/2026-03-06-figma-mcp-server-can-now-generate-design-layers-from-vs-code
+- Summary: GitHub Copilot users can now connect to the Figma MCP server to both pull design context into code and send rendered UI to Figma as editable frames. Together, these capabilities… The post Figma MCP server can now generate design layers from VS Code appeared first on The GitHub Blog .
+
+## 10. GitHub Copilot in Visual Studio Code v1.110 – February release
+- Source: GitHub Changelog - Copilot
+- Published: Fri, 06 Mar 2026 19:03:06 +0000
+- URL: https://github.blog/changelog/2026-03-06-github-copilot-in-visual-studio-code-v1-110-february-release
+- Summary: The Visual Studio Code February 2026 release makes agents practical for longer-running and more complex tasks. This gives you more control over how they run, new ways to extend what… The post GitHub Copilot in Visual Studio Code v1.110 – February release appeared first on The GitHub Blog .
