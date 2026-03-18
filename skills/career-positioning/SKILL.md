@@ -9,7 +9,7 @@ Use this skill to convert a personal assessment or profile review into practical
 
 ## Primary Goal
 
-Generate commercially useful personal-brand topics, assets, and offers from a source assessment without drifting into generic advice, while incorporating current VP/SVP-level AI market expectations.
+Generate commercially useful personal-brand topics, assets, and offers from a source assessment without drifting into generic advice, while incorporating current global VP/SVP-level AI market expectations from multiple job sites and company career pages.
 
 ## Use This Skill For
 

@@ -154,6 +154,54 @@ def build_markdown(source_path: Path, themes: list[str], benchmark_path: Path, b
         },
     ]
 
+    recruiter_topics = [
+        "What senior AI hiring managers actually look for beyond GenAI buzzwords",
+        "Why production AI experience matters more than pilot volume",
+        "How to signal executive-ready AI leadership without sounding generic",
+        "What VP-level AI roles expect in governance, commercialization, and operating-model thinking",
+        "Why context engineering is becoming an executive skill, not just a technical pattern",
+    ]
+
+    advisory_topics = [
+        "Why enterprises need AI operating-model redesign before scaling Agentic AI",
+        "How to assess whether an AI initiative is commercially ready",
+        "The five governance gaps that undermine enterprise AI trust",
+        "Why boards should ask for observability and auditability before approving AI scale-up",
+        "How to move from AI experimentation to measurable business value in 90 days",
+    ]
+
+    founder_topics = [
+        "What startup founders get wrong about enterprise AI buying criteria",
+        "How product companies should position AI trust, governance, and commercial readiness",
+        "Why enterprise customers buy accountable AI, not just powerful AI",
+        "What AI startup boards should ask about platform leverage and risk control",
+        "How to package AI capability so enterprise buyers see strategic value quickly",
+    ]
+
+    get_hired_topics = [
+        "How to present senior AI leadership without sounding like a generic transformation executive",
+        "What hiring panels really infer from production AI experience",
+        "Why governance, commercialization, and operating-model language strengthens VP-level AI credibility",
+        "How to signal board-ready AI judgment on LinkedIn",
+        "What separates a senior AI candidate from a senior technologist with AI exposure",
+    ]
+
+    get_retained_topics = [
+        "Why advisory clients pay for AI judgment, not just AI knowledge",
+        "What a useful 90-day AI advisory retainer should actually deliver",
+        "How to frame AI risk, value, and governance so leadership keeps you engaged",
+        "Why executives retain advisors who reduce ambiguity, not just produce slides",
+        "How to package enterprise AI operating-model guidance into recurring value",
+    ]
+
+    get_invited_topics = [
+        "What makes an enterprise AI speaker worth inviting",
+        "Why event organizers and boards look for practical AI operators, not hype amplifiers",
+        "How to build a point of view strong enough for conference panels and advisory asks",
+        "The five hard questions every executive audience wants answered about Agentic AI",
+        "How to become the person boards call when AI moves from experimentation to accountability",
+    ]
+
     lines = [
         "# Career Positioning Topic Backlog",
         "",
@@ -237,6 +285,66 @@ def build_markdown(source_path: Path, themes: list[str], benchmark_path: Path, b
 
     lines.extend(
         [
+            "## Recruiter / Hiring-Manager Topics",
+            "",
+        ]
+    )
+    for idx, topic in enumerate(recruiter_topics, start=1):
+        lines.append(f"{idx}. {topic}")
+
+    lines.extend(
+        [
+            "",
+            "## Advisory-Client Topics",
+            "",
+        ]
+    )
+    for idx, topic in enumerate(advisory_topics, start=1):
+        lines.append(f"{idx}. {topic}")
+
+    lines.extend(
+        [
+            "",
+            "## Startup Founder / Board Topics",
+            "",
+        ]
+    )
+    for idx, topic in enumerate(founder_topics, start=1):
+        lines.append(f"{idx}. {topic}")
+
+    lines.extend(
+        [
+            "",
+            "## Topics To Get Hired",
+            "",
+        ]
+    )
+    for idx, topic in enumerate(get_hired_topics, start=1):
+        lines.append(f"{idx}. {topic}")
+
+    lines.extend(
+        [
+            "",
+            "## Topics To Get Retained",
+            "",
+        ]
+    )
+    for idx, topic in enumerate(get_retained_topics, start=1):
+        lines.append(f"{idx}. {topic}")
+
+    lines.extend(
+        [
+            "",
+            "## Topics To Get Invited To Speak Or Advise",
+            "",
+        ]
+    )
+    for idx, topic in enumerate(get_invited_topics, start=1):
+        lines.append(f"{idx}. {topic}")
+
+    lines.extend(
+        [
+            "",
             "## Suggested Publishing Sequence",
             "",
             "1. Start with posts that sharpen the positioning wedge and reject generic AI language.",
@@ -321,6 +429,54 @@ def build_html(source_path: Path, themes: list[str], benchmark_path: Path, bench
         },
     ]
 
+    recruiter_topics = [
+        "What senior AI hiring managers actually look for beyond GenAI buzzwords",
+        "Why production AI experience matters more than pilot volume",
+        "How to signal executive-ready AI leadership without sounding generic",
+        "What VP-level AI roles expect in governance, commercialization, and operating-model thinking",
+        "Why context engineering is becoming an executive skill, not just a technical pattern",
+    ]
+
+    advisory_topics = [
+        "Why enterprises need AI operating-model redesign before scaling Agentic AI",
+        "How to assess whether an AI initiative is commercially ready",
+        "The five governance gaps that undermine enterprise AI trust",
+        "Why boards should ask for observability and auditability before approving AI scale-up",
+        "How to move from AI experimentation to measurable business value in 90 days",
+    ]
+
+    founder_topics = [
+        "What startup founders get wrong about enterprise AI buying criteria",
+        "How product companies should position AI trust, governance, and commercial readiness",
+        "Why enterprise customers buy accountable AI, not just powerful AI",
+        "What AI startup boards should ask about platform leverage and risk control",
+        "How to package AI capability so enterprise buyers see strategic value quickly",
+    ]
+
+    get_hired_topics = [
+        "How to present senior AI leadership without sounding like a generic transformation executive",
+        "What hiring panels really infer from production AI experience",
+        "Why governance, commercialization, and operating-model language strengthens VP-level AI credibility",
+        "How to signal board-ready AI judgment on LinkedIn",
+        "What separates a senior AI candidate from a senior technologist with AI exposure",
+    ]
+
+    get_retained_topics = [
+        "Why advisory clients pay for AI judgment, not just AI knowledge",
+        "What a useful 90-day AI advisory retainer should actually deliver",
+        "How to frame AI risk, value, and governance so leadership keeps you engaged",
+        "Why executives retain advisors who reduce ambiguity, not just produce slides",
+        "How to package enterprise AI operating-model guidance into recurring value",
+    ]
+
+    get_invited_topics = [
+        "What makes an enterprise AI speaker worth inviting",
+        "Why event organizers and boards look for practical AI operators, not hype amplifiers",
+        "How to build a point of view strong enough for conference panels and advisory asks",
+        "The five hard questions every executive audience wants answered about Agentic AI",
+        "How to become the person boards call when AI moves from experimentation to accountability",
+    ]
+
     def li_list(items: list[str]) -> str:
         return "".join(f"<li>{escape(item)}</li>" for item in items)
 
@@ -345,6 +501,12 @@ def build_html(source_path: Path, themes: list[str], benchmark_path: Path, bench
     benchmark_skills = li_list(benchmark.get("Common Skills", []))
     benchmark_experience = li_list(benchmark.get("Common Experience Expectations", []))
     benchmark_expectations = li_list(benchmark.get("Common Role Expectations", []))
+    recruiter_list = li_list(recruiter_topics)
+    advisory_list = li_list(advisory_topics)
+    founder_list = li_list(founder_topics)
+    hired_list = li_list(get_hired_topics)
+    retained_list = li_list(get_retained_topics)
+    invited_list = li_list(get_invited_topics)
 
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -484,6 +646,36 @@ def build_html(source_path: Path, themes: list[str], benchmark_path: Path, bench
       <div class="grid">
         {''.join(offer_cards)}
       </div>
+    </section>
+
+    <section class="section">
+      <h2>Recruiter / Hiring-Manager Topics</h2>
+      <ol>{recruiter_list}</ol>
+    </section>
+
+    <section class="section">
+      <h2>Advisory-Client Topics</h2>
+      <ol>{advisory_list}</ol>
+    </section>
+
+    <section class="section">
+      <h2>Startup Founder / Board Topics</h2>
+      <ol>{founder_list}</ol>
+    </section>
+
+    <section class="section">
+      <h2>Topics To Get Hired</h2>
+      <ol>{hired_list}</ol>
+    </section>
+
+    <section class="section">
+      <h2>Topics To Get Retained</h2>
+      <ol>{retained_list}</ol>
+    </section>
+
+    <section class="section">
+      <h2>Topics To Get Invited To Speak Or Advise</h2>
+      <ol>{invited_list}</ol>
     </section>
 
     <section class="section">

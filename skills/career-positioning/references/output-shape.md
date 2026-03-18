@@ -9,6 +9,12 @@
 - Post topics
 - Asset topics
 - Offer ideas
+- Recruiter / hiring-manager topics
+- Advisory-client topics
+- Startup founder / board topics
+- Topics to get hired
+- Topics to get retained
+- Topics to get invited to speak or advise
 - Suggested publishing sequence
 
 ## Offer Quality Bar
