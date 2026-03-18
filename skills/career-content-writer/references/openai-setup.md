@@ -21,6 +21,14 @@ $env:OPENAI_MODEL="gpt-5"
 powershell -ExecutionPolicy Bypass -File .\generate_career_post_pack.ps1 -Week 1 -PostTopic 1
 ```
 
+To force OpenAI mode and fail instead of silently falling back:
+
+```powershell
+$env:OPENAI_API_KEY="your-key"
+$env:OPENAI_MODEL="gpt-5"
+powershell -ExecutionPolicy Bypass -File .\generate_career_post_pack.ps1 -Week 1 -PostTopic 1 -Mode openai
+```
+
 To force fallback mode:
 
 ```powershell

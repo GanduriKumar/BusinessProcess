@@ -40,6 +40,7 @@ Create:
 - a LinkedIn post
 - a LinkedIn article / newsletter draft
 - a Medium article draft
+- include relevant in-body discoverability terms based on the topic, not as a forced checklist
 
 ### 3. Run Potato Mode review
 
@@ -49,6 +50,7 @@ Pressure-test the draft before writing it out:
 - remove AI-sounding filler
 - replace generic claims with practical business framing
 - make the opening and close sharper
+- ensure relevant keywords are present naturally in the body so the content is easier to discover and classify
 
 ## References
 

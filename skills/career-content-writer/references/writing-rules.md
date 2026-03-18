@@ -7,6 +7,7 @@
 - Use first-person judgment when useful.
 - End with a question or invitation to engage.
 - Avoid emojis and generic motivation language.
+- Include 2 to 4 relevant body terms naturally when they fit, for example `enterprise AI`, `agentic AI`, `GenAI`, `AI governance`, or `context engineering`.
 
 ## LinkedIn Article
 
@@ -15,6 +16,7 @@
 - Use simple sections and a practical framework.
 - Include an executive takeaway near the end.
 - Close with a soft invitation to follow, discuss, or engage.
+- Make sure the body naturally includes the most relevant strategic terms for the topic so the article signals the right subject area.
 
 ## Medium Article
 
@@ -23,6 +25,7 @@
 - Add enough technical depth to show credibility.
 - Use clear sections and plain wording.
 - End with a practical checklist or action lens.
+- Include topic-relevant search terms in the body in a natural way, without making the writing read like SEO filler.
 
 ## Potato Mode Review
 

@@ -38,6 +38,16 @@ Preferred output pair:
 - Use factual business framing and reasonable inference only.
 - Make the content understandable to a beginner while still giving technical depth.
 - Build executive relevance into the narrative so the writing can attract hiring, advisory, and speaking interest.
+- Include discoverable body terms relevant to the topic, especially where appropriate:
+  - `enterprise AI`
+  - `agentic AI`
+  - `GenAI`
+  - `context engineering`
+  - `AI governance`
+  - `AI evaluation`
+  - `AI operating model`
+  - `AI observability`
+- Do not stuff keywords. Terms must be used naturally and only when they fit the topic.
 
 ## Review Standard
 

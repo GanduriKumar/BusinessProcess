@@ -3,7 +3,10 @@ param(
     [int]$Week,
 
     [Parameter(Mandatory = $true)]
-    [int]$PostTopic
+    [int]$PostTopic,
+
+    [ValidateSet("auto", "template", "openai")]
+    [string]$Mode = "auto"
 )
 
 $ErrorActionPreference = "Stop"
@@ -15,5 +18,5 @@ if (-not (Test-Path $scriptPath)) {
     throw "Content pack generator not found at $scriptPath"
 }
 
-python $scriptPath --week $Week --post-topic $PostTopic
+python $scriptPath --week $Week --post-topic $PostTopic --mode $Mode
 exit $LASTEXITCODE

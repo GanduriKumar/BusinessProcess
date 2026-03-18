@@ -103,6 +103,48 @@ def topic_focus(topic: str) -> str:
     return "enterprise AI execution"
 
 
+def topic_keywords(topic: str) -> list[str]:
+    topic_l = topic.lower()
+    keywords = ["enterprise AI"]
+    if "agentic" in topic_l:
+        keywords.extend(["agentic AI", "GenAI"])
+    if "genai" in topic_l:
+        keywords.append("GenAI")
+    if "context engineering" in topic_l:
+        keywords.extend(["context engineering", "agentic AI", "GenAI"])
+    if "governance" in topic_l or "audit" in topic_l or "observability" in topic_l:
+        keywords.extend(["AI governance", "AI evaluation", "AI observability"])
+    if "operating-model" in topic_l or "operating model" in topic_l:
+        keywords.extend(["AI operating model", "agentic AI", "GenAI"])
+    if "hiring" in topic_l or "commercial" in topic_l or "value" in topic_l or "buyer" in topic_l:
+        keywords.extend(["GenAI", "agentic AI"])
+    if "board" in topic_l or "cxo" in topic_l:
+        keywords.extend(["AI governance", "enterprise AI"])
+    deduped: list[str] = []
+    seen: set[str] = set()
+    for keyword in keywords:
+        key = keyword.lower()
+        if key not in seen:
+            seen.add(key)
+            deduped.append(keyword)
+    return deduped
+
+
+def topic_style(topic: str) -> str:
+    topic_l = topic.lower()
+    if "hiring" in topic_l:
+        return "Write with a market-observer voice. It should feel like a senior leader reading patterns from hiring decisions and executive expectations."
+    if "context engineering" in topic_l:
+        return "Write with a systems-thinking voice. Make the piece feel reflective, technically grounded, and strategically useful."
+    if "governance" in topic_l or "audit" in topic_l or "observability" in topic_l:
+        return "Write with a risk-and-trust voice. Make it sound like advice to serious operators, not a compliance memo."
+    if "board" in topic_l or "cxo" in topic_l:
+        return "Write with an executive-advisory voice. Keep it crisp, commercial, and decision-oriented."
+    if "operating model" in topic_l or "operating-model" in topic_l:
+        return "Write with an operating-model voice. Make it feel pragmatic and grounded in how work actually gets done."
+    return "Write with a pragmatic enterprise-advisor voice. Avoid generic thought-leadership patterns."
+
+
 def week_goal_line(week_goal: str) -> str:
     mapping = {
         "Establish your positioning wedge": "I am deliberately using this week to sharpen a distinct point of view instead of posting generic AI commentary.",
@@ -173,6 +215,41 @@ def potato_mode_review(text: str) -> str:
     return reviewed.strip() + "\n"
 
 
+def inject_missing_keywords(text: str, keywords: list[str], channel: str) -> str:
+    lowered = text.lower()
+    missing = [kw for kw in keywords if kw.lower() not in lowered]
+    if not missing:
+        return text
+
+    if channel == "linkedin_post":
+        if len(missing) == 1:
+            sentence = f"In practical terms, that also connects directly to {missing[0]}."
+        else:
+            sentence = "In practical terms, this sits at the intersection of " + ", ".join(missing[:3]) + "."
+        if "What do you think" in text:
+            return text.replace("What do you think", sentence + "\n\nWhat do you think", 1)
+        return text.rstrip() + "\n\n" + sentence + "\n"
+
+    if channel == "linkedin_article":
+        if len(missing) == 1:
+            sentence = f"This is also why {missing[0]} belongs in the same conversation."
+        else:
+            sentence = "This is also why terms like " + ", ".join(missing[:4]) + " belong in the same conversation."
+        marker = "## Executive takeaway"
+        if marker in text:
+            return text.replace(marker, sentence + "\n\n" + marker, 1)
+        return text.rstrip() + "\n\n" + sentence + "\n"
+
+    if len(missing) == 1:
+        sentence = f"Put simply, this topic also connects directly to {missing[0]}."
+    else:
+        sentence = "Put simply, this topic connects directly to " + ", ".join(missing[:4]) + "."
+    marker = "## Closing view"
+    if marker in text:
+        return text.replace(marker, sentence + "\n\n" + marker, 1)
+    return text.rstrip() + "\n\n" + sentence + "\n"
+
+
 def call_openai_json(prompt: str, model: str) -> dict[str, str]:
     api_key = os.environ.get("OPENAI_API_KEY", "").strip()
     if not api_key:
@@ -239,7 +316,17 @@ def call_openai_json(prompt: str, model: str) -> dict[str, str]:
     data = json.loads(raw)
     output_text = data.get("output_text", "")
     if not output_text:
-        raise RuntimeError("OpenAI response did not include output_text")
+        parts: list[str] = []
+        for item in data.get("output", []):
+            if item.get("type") != "message":
+                continue
+            for content in item.get("content", []):
+                content_type = content.get("type")
+                if content_type in {"output_text", "text"} and content.get("text"):
+                    parts.append(str(content["text"]))
+        output_text = "\n".join(parts).strip()
+    if not output_text:
+        raise RuntimeError("OpenAI response did not include any extractable text output")
     parsed = json.loads(output_text)
     return {k: str(v).strip() for k, v in parsed.items()}
 
@@ -250,6 +337,7 @@ def build_openai_prompt(
     linkedin_article_title: str,
     medium_article_title: str,
     cta: str,
+    keywords: list[str],
 ) -> str:
     return f"""
 Create three pieces of content from this planning context.
@@ -260,6 +348,8 @@ Planning context:
 - LinkedIn article topic from plan: {linkedin_article_title}
 - Medium article topic from plan: {medium_article_title}
 - CTA guidance: {cta}
+- Relevant terms to include naturally in the body when they fit: {", ".join(keywords)}
+- Writing style guidance: {topic_style(selected_topic)}
 
 Output requirements:
 1. LinkedIn post:
@@ -270,6 +360,12 @@ Output requirements:
 - no emojis
 - should invite comments from senior leaders
 - should sound like an experienced operator, not a content marketer
+- should not reuse generic structures like:
+  - "A lot of teams still mistake activity for progress"
+  - "The broader point for me is simple"
+  - "What do you think is most often missing"
+  - "This week is about..."
+- vary rhythm, sentence length, and rhetorical shape based on the topic
 
 2. LinkedIn article:
 - 700 to 1100 words
@@ -279,6 +375,8 @@ Output requirements:
 - human tone
 - no fake data
 - title must be sharper and more reader-friendly than the plan title if needed
+- do not mirror the LinkedIn post too closely
+- avoid repeating the same opening pattern used in earlier drafts
 
 3. Medium article:
 - 900 to 1400 words
@@ -286,6 +384,7 @@ Output requirements:
 - clearer explanatory structure for beginners
 - still credible to technical and business readers
 - close with a practical checklist or action lens
+- should feel like an article written for search and sharing, not a repackaged LinkedIn note
 
 Potato Mode review before finalizing:
 - cut fluff
@@ -294,6 +393,7 @@ Potato Mode review before finalizing:
 - if a phrase sounds generic, rewrite it
 - make sure a CXO could read it without rolling their eyes
 - make sure the text can help attract hiring, advisory, speaking, or consulting interest
+- make each piece sound meaningfully different from the others
 
 Important restrictions:
 - no emojis
@@ -301,6 +401,7 @@ Important restrictions:
 - no fake customer stories
 - no dramatic claims you cannot support
 - keep the writing factual and credible
+- include the relevant terms naturally in the body, not as a keyword dump
 """.strip()
 
 
@@ -310,20 +411,30 @@ def generate_with_openai(
     linkedin_article_title: str,
     medium_article_title: str,
     cta: str,
+    keywords: list[str],
     model: str,
 ) -> tuple[str, str, str, str, str]:
-    prompt = build_openai_prompt(selected_topic, week_goal, linkedin_article_title, medium_article_title, cta)
+    prompt = build_openai_prompt(selected_topic, week_goal, linkedin_article_title, medium_article_title, cta, keywords)
     data = call_openai_json(prompt, model)
-    linkedin_post = potato_mode_review(data["linkedin_post"])
+    linkedin_post = inject_missing_keywords(potato_mode_review(data["linkedin_post"]), keywords, "linkedin_post")
     linkedin_title = potato_mode_review(data["linkedin_article_title"]).strip()
-    linkedin_article = potato_mode_review(f"# {linkedin_title}\n\n{data['linkedin_article']}")
+    linkedin_article = inject_missing_keywords(
+        potato_mode_review(f"# {linkedin_title}\n\n{data['linkedin_article']}"),
+        keywords,
+        "linkedin_article",
+    )
     medium_title = potato_mode_review(data["medium_article_title"]).strip()
-    medium_article = potato_mode_review(f"# {medium_title}\n\n{data['medium_article']}")
+    medium_article = inject_missing_keywords(
+        potato_mode_review(f"# {medium_title}\n\n{data['medium_article']}"),
+        keywords,
+        "medium_article",
+    )
     return linkedin_post, linkedin_title, linkedin_article, medium_title, medium_article
 
 
 def build_linkedin_post(topic: str, week_goal: str, cta: str) -> str:
     focus = topic_focus(topic)
+    keywords = topic_keywords(topic)
     lines = [
         post_hook(topic),
         "",
@@ -343,17 +454,20 @@ def build_linkedin_post(topic: str, week_goal: str, cta: str) -> str:
         "If you are leading AI, transformation, delivery, or product teams, the real test is not whether the idea sounds advanced.",
         "The real test is whether it can survive budget scrutiny, governance scrutiny, and operational reality.",
         "",
+        f"In practice, this is where {', '.join(keywords[:3])} start to matter together.",
+        "",
         week_goal_line(week_goal),
         "",
         "What do you think is most often missing when organizations discuss this seriously?",
     ]
     if cta:
         lines.extend(["", cta.replace("CTA: ", "").capitalize() + "."])
-    return potato_mode_review("\n".join(lines))
+    return inject_missing_keywords(potato_mode_review("\n".join(lines)), keywords, "linkedin_post")
 
 
 def build_linkedin_article(topic: str, selected_topic: str, week_goal: str) -> str:
     focus = topic_focus(selected_topic)
+    keywords = topic_keywords(selected_topic)
     title = topic
     lines = [
         f"# {title}",
@@ -383,6 +497,7 @@ def build_linkedin_article(topic: str, selected_topic: str, week_goal: str) -> s
         "",
         f"That is where {focus} becomes strategically useful.",
         "It forces leaders to connect technology decisions with management decisions.",
+        f"In most real organizations, that also means thinking across {', '.join(keywords[:4])}.",
         "",
         "## A practical way to think about it",
         "",
@@ -413,11 +528,12 @@ def build_linkedin_article(topic: str, selected_topic: str, week_goal: str) -> s
         "",
         "And if the current conversation still sounds abstract, that is usually a sign the operating model has not been thought through yet.",
     ]
-    return potato_mode_review("\n".join(lines))
+    return inject_missing_keywords(potato_mode_review("\n".join(lines)), keywords, "linkedin_article")
 
 
 def build_medium_article(topic: str, selected_topic: str) -> str:
     focus = topic_focus(selected_topic)
+    keywords = topic_keywords(selected_topic)
     search_title = topic if ":" in topic else f"{topic}: what business leaders should understand"
     lines = [
         f"# {search_title}",
@@ -436,6 +552,7 @@ def build_medium_article(topic: str, selected_topic: str) -> str:
         "The next wave is creating management questions.",
         "Leaders want to know whether these systems can be trusted in actual delivery environments.",
         "They want to know who owns the outcomes when the workflow is partly automated, partly assisted, and partly human-reviewed.",
+        f"That is why conversations around {', '.join(keywords[:4])} are becoming more connected.",
         "",
         "That is where this topic becomes important.",
         "",
@@ -482,7 +599,7 @@ def build_medium_article(topic: str, selected_topic: str) -> str:
         "The teams that do this well will move faster with less confusion.",
         "The leaders who can explain that clearly will remain valuable for a long time.",
     ]
-    return potato_mode_review("\n".join(lines))
+    return inject_missing_keywords(potato_mode_review("\n".join(lines)), keywords, "medium_article")
 
 
 def html_from_text(title: str, sections: list[tuple[str, str]]) -> str:
@@ -552,7 +669,8 @@ def html_from_text(title: str, sections: list[tuple[str, str]]) -> str:
 """
 
 
-def markdown_document(week: int, post_topic: int, week_goal: str, topic: str, linkedin_post: str, linkedin_article_title: str, linkedin_article: str, medium_article_title: str, medium_article: str, source_path: Path) -> str:
+def markdown_document(week: int, post_topic: int, week_goal: str, topic: str, generation_mode: str, linkedin_post: str, linkedin_article_title: str, linkedin_article: str, medium_article_title: str, medium_article: str, source_path: Path) -> str:
+    keywords = topic_keywords(topic)
     return "\n".join(
         [
             "# Career Content Pack",
@@ -562,6 +680,8 @@ def markdown_document(week: int, post_topic: int, week_goal: str, topic: str, li
             f"- Post topic number: {post_topic}",
             f"- Week goal: {week_goal}",
             f"- Selected topic: {topic}",
+            f"- Generation mode used: {generation_mode}",
+            f"- Relevant body terms: {', '.join(keywords)}",
             f"- Generated at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
             "",
             "## LinkedIn Post",
@@ -600,6 +720,8 @@ def main() -> None:
     linkedin_article_title = str(week_data["linkedin_article"])
     medium_article_title = str(week_data["medium_article"])
     cta = str(week_data["cta"])
+    keywords = topic_keywords(selected_topic)
+    generation_mode_used = "template"
 
     use_openai = args.mode == "openai" or (args.mode == "auto" and bool(os.environ.get("OPENAI_API_KEY", "").strip()))
     if use_openai:
@@ -610,18 +732,22 @@ def main() -> None:
                 linkedin_article_title,
                 medium_article_title,
                 cta,
+                keywords,
                 args.model,
             )
+            generation_mode_used = "openai"
         except RuntimeError as exc:
             if args.mode == "openai":
                 raise SystemExit(str(exc))
             linkedin_post = build_linkedin_post(selected_topic, week_goal, cta)
             linkedin_article = build_linkedin_article(linkedin_article_title, selected_topic, week_goal)
             medium_article = build_medium_article(medium_article_title, selected_topic)
+            generation_mode_used = "template-fallback"
     else:
         linkedin_post = build_linkedin_post(selected_topic, week_goal, cta)
         linkedin_article = build_linkedin_article(linkedin_article_title, selected_topic, week_goal)
         medium_article = build_medium_article(medium_article_title, selected_topic)
+        generation_mode_used = "template"
 
     timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
     base = f"career_content_pack_week{args.week}_post{args.post_topic}_{slug(selected_topic)}_{timestamp}"
@@ -634,6 +760,7 @@ def main() -> None:
             args.post_topic,
             week_goal,
             selected_topic,
+            generation_mode_used,
             linkedin_post,
             linkedin_article_title,
             linkedin_article,
@@ -648,7 +775,7 @@ def main() -> None:
         html_from_text(
             f"Career Content Pack - Week {args.week} Post {args.post_topic}",
             [
-                ("Selection", f"Week goal: {week_goal}\nSelected topic: {selected_topic}\nSource plan: {plan_path}"),
+                ("Selection", f"Week goal: {week_goal}\nSelected topic: {selected_topic}\nGeneration mode used: {generation_mode_used}\nRelevant body terms: {', '.join(keywords)}\nSource plan: {plan_path}"),
                 ("LinkedIn Post", linkedin_post),
                 ("LinkedIn Article / Newsletter", linkedin_article),
                 ("Medium Article", medium_article),

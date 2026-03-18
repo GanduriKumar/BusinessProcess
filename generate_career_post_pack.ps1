@@ -3,7 +3,10 @@ param(
     [int]$Week,
 
     [Parameter(Mandatory = $true)]
-    [int]$PostTopic
+    [int]$PostTopic,
+
+    [ValidateSet("auto", "template", "openai")]
+    [string]$Mode = "auto"
 )
 
 $ErrorActionPreference = "Stop"
@@ -15,5 +18,5 @@ if (-not (Test-Path $runner)) {
     throw "Career content writer runner not found at $runner"
 }
 
-& powershell -ExecutionPolicy Bypass -File $runner -Week $Week -PostTopic $PostTopic
+& powershell -ExecutionPolicy Bypass -File $runner -Week $Week -PostTopic $PostTopic -Mode $Mode
 exit $LASTEXITCODE
