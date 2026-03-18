@@ -7,6 +7,7 @@ Repo-level agent for personal market positioning, content strategy, and offer de
 - Turn personal career assessments into positioning themes, topic backlogs, and commercial offer ideas.
 - Incorporate recent global VP/SVP-level AI job market expectations from multiple job sites and company career pages into the positioning output.
 - Generate structured content ideas for posts, articles, assets, workshops, and advisory services.
+- Generate structured posting calendars and outline templates for LinkedIn and Medium.
 - Use the skill [skills/career-positioning/SKILL.md](../../skills/career-positioning/SKILL.md).
 
 ## Out of Scope

@@ -56,3 +56,5 @@ Generate commercially useful personal-brand topics, assets, and offers from a so
 
 - `scripts/generate_positioning_topics.py`: generate a markdown backlog of posts, assets, and offers from a source assessment
 - `scripts/run_positioning_topics.ps1`: PowerShell launcher for the topic generator
+- `scripts/generate_content_calendar.py`: generate a 12-week LinkedIn and Medium content plan plus draft outline templates
+- `scripts/run_content_calendar.ps1`: PowerShell launcher for the content plan generator
