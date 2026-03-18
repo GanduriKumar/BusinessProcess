@@ -30,6 +30,7 @@ This folder contains agent definitions.
 - `geo-optiflow-lead`: repo-level GEO / OptiFlow solution lead; pairs with `skills/geo-optiflow`.
 - `model-eval-watcher`: repo-level AI model-evaluation and agent-evaluation watch lead; uses repo scripts under `tools/one-off`.
 - `career-positioning-strategist`: repo-level personal positioning and offer-design lead; pairs with `skills/career-positioning`.
+- `career-content-writer`: repo-level personal content-pack writer; pairs with `skills/career-content-writer`.
 
 Each active agent now includes:
 
