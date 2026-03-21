@@ -26,6 +26,10 @@ For each role, extract:
 - title
 - posting recency or date
 - source URL
+- compensation range, if publicly visible
+- location and work mode, if publicly visible
+- company type or role context where inferable from the posting (for example: product company, consulting/advisory, financial services, enterprise/internal IT, private equity)
+- one or two notable signals relevant to career positioning or offer design, such as agentic AI emphasis, governance expectations, commercialization expectations, operating-model expectations, or platform ownership expectations
 
 Then synthesize across the sample and summarize:
 - common skills
@@ -46,6 +50,7 @@ Suggested output structure:
 - coverage target
 - source mix
 - recent role examples
+- sample size and company-type mix
 - common skills
 - common experience expectations
 - common role expectations

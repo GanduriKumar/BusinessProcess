@@ -31,3 +31,4 @@ Reusable capabilities live in subfolders under `skills/`.
 - `model-eval-watch`: recurring tracking of AI model evaluation and agent evaluation updates, daily watch outputs, and weekly markdown digests under `docs/output/modelevals`.
 - `career-positioning`: turns career assessments and positioning reviews into post topics, authority assets, and monetizable service offers.
 - `career-content-writer`: turns the 12-week career content plan into LinkedIn posts plus LinkedIn and Medium article drafts with a sharper internal review pass before writing outputs.
+- `ai-search-discovery-research`: source-backed research and technical-paper generation on Google AI Mode, AI Overviews, and other AI answer engines, including concrete content-action guidance for blogs, docs, Medium, and LinkedIn.

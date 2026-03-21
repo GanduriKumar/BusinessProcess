@@ -28,19 +28,27 @@ Step 3. Potato Mode career assessment
 Step 4. Expand the AI readiness offer
 - Use the prompt in `.github/prompts/expand-ai-readiness-offer.md`
 - Use the output from Step 3 as the direct source
+- Also use the latest benchmark generated in Step 1 as required supporting context for market grounding
+- Also use relevant positioning/content-plan assets if they strengthen the final decision product without inventing facts
 - Save the result as:
   `docs/output/personal/assets/AI_Readiness_Opportunity_Assessment_Expanded_Potato_Mode.html`
 
 Workflow requirements:
 - do the steps in order
-- do not skip a step unless its output already exists and is still the intended current source
+- for each step, generate the content afresh based on the current prompt and current sources
+- if the target output file does not exist, create it
+- if the target output file already exists, compare the existing content with the freshly generated content
+- if there is a meaningful difference, update the file with the freshly generated content
+- if there is no difference, leave the file unchanged and report that it is already current
 - preserve source-grounding and avoid inventing facts
 - keep the benchmark factual and limited to public postings in the last 90 days
 - keep the assessments commercially useful and evidence-aware
 - make the final AI readiness asset a clear decision product, not generic advisory filler
+- for Step 4, carry forward the strongest market signals from Step 1 into the final asset rather than treating Step 3 as the only context
+- for Step 4, prefer a fuller benchmark-grounded HTML decision product over a lighter summary if richer evidence is available from earlier steps
 
 At the end, report:
-- which files were created or updated
+- which files were created, updated, or left unchanged
 - which benchmark file was used
 - any gaps or assumptions caused by missing or inaccessible source material
 ```

@@ -18,6 +18,12 @@ The output should:
 - clarify buyer, value proposition, delivery model, and follow-on revenue path
 - explain how it can generate leads, early wins, and sustained income
 - include a practical build sequence so it does not remain just a nicely written concept
+- explicitly use the latest VP/SVP AI benchmark as required supporting evidence, not optional background
+- connect the offer design to current senior-market demand signals such as Agentic AI, AI governance, operating-model redesign, commercialization, and production readiness
+- reference representative benchmark patterns or role examples where they materially strengthen the analysis
+- explain why the offer is commercially credible in light of the current VP/SVP AI market rather than relying on generic consulting logic
+- include pricing logic and product-shape logic grounded in the benchmark where possible
+- favor a fuller decision-product structure over a lightweight advisory summary
 
 Writing requirements:
 - write in direct plain English
@@ -26,6 +32,8 @@ Writing requirements:
 - keep the tone senior, opinionated, and commercially grounded
 - make the output feel like a decision product, not a soft brainstorm
 - use the same polished standalone HTML style as the earlier assessment assets
+- keep the output benchmark-grounded, not just stylistically blunt
+- do not ignore stronger market evidence already available from the benchmark and earlier steps
 
 Suggested output sections:
 - title and brief framing
@@ -44,6 +52,12 @@ Suggested output sections:
 - what to build first
 - practical build sequence
 - final Potato Mode verdict
+
+Grounding requirements:
+- Treat `docs/output/personal/GenAI_Career_Extension_Assessment_Potato_Mode.html` as the direct narrative source
+- Treat the latest VP/SVP benchmark as required market evidence for validating the offer design
+- Pull forward the most relevant benchmark signals into the final asset, especially if they sharpen the buyer, price, delivery model, credibility, or follow-on revenue path
+- If richer evidence exists from the benchmark or the earlier assessment chain, do not collapse the output into a simpler summary
 
 Save the result as:
 `docs/output/personal/assets/AI_Readiness_Opportunity_Assessment_Expanded_Potato_Mode.html`

@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Search Discovery Research"
+  short_description: "Research AI search and content strategy shifts"
+  default_prompt: "Use $ai-search-discovery-research to research Google AI Mode, AI Overviews, and other AI answer engines, then produce a source-backed technical paper with concrete content-action guidance."

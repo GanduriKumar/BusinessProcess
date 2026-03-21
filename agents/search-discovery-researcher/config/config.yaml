@@ -1,0 +1,5 @@
+name: search-discovery-researcher
+owner: repo
+skill: skills/ai-search-discovery-research
+source_inventory: skills/ai-search-discovery-research/scripts/engine_sources.json
+default_output_dir: docs/output/websearch/search-discovery

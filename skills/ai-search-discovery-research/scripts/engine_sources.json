@@ -1,0 +1,98 @@
+[
+  {
+    "engine": "Google Search",
+    "category": "Site owner guidance",
+    "url": "https://developers.google.com/search/docs/appearance/ai-features",
+    "note": "Primary Search Central guidance for AI Overviews and AI Mode from a site-owner perspective."
+  },
+  {
+    "engine": "Google Search",
+    "category": "Product announcement",
+    "url": "https://blog.google/products/search/ai-mode-search/",
+    "note": "Official launch framing for AI Mode and expanded AI Overviews capabilities."
+  },
+  {
+    "engine": "Google Search",
+    "category": "Product expansion",
+    "url": "https://blog.google/products/search/ai-overview-expansion-may-2025-update/",
+    "note": "Official update on AI Overviews expansion, usage, and web-link treatment."
+  },
+  {
+    "engine": "Google Search",
+    "category": "Content policy",
+    "url": "https://developers.google.com/search/blog/2023/02/google-search-and-ai-content",
+    "note": "Foundational guidance on AI-generated content and people-first quality."
+  },
+  {
+    "engine": "OpenAI / ChatGPT Search",
+    "category": "Product announcement",
+    "url": "https://openai.com/index/introducing-chatgpt-search/",
+    "note": "Official launch and product behavior for ChatGPT search."
+  },
+  {
+    "engine": "OpenAI / ChatGPT Search",
+    "category": "Publisher guidance",
+    "url": "https://help.openai.com/en/articles/12627856-publishers-and-developers-faq",
+    "note": "Official publisher and developer FAQ for ChatGPT search discoverability and controls."
+  },
+  {
+    "engine": "OpenAI / ChatGPT Search",
+    "category": "Commerce / discovery guidance",
+    "url": "https://openai.com/chatgpt/search-product-discovery/",
+    "note": "Current product-discovery guidance relevant to shopping-intent content."
+  },
+  {
+    "engine": "Perplexity",
+    "category": "Crawler guidance",
+    "url": "https://www.perplexity.ai/help-center/en/articles/10354969-how-does-perplexity-follow-robots-txt",
+    "note": "Official robots.txt and indexing behavior guidance."
+  },
+  {
+    "engine": "Perplexity",
+    "category": "Source quality signal",
+    "url": "https://www.perplexity.ai/help-center/en/articles/12870803-premium-data-sources",
+    "note": "Indicates emphasis on authoritative premium data sources."
+  },
+  {
+    "engine": "Microsoft Bing / Copilot",
+    "category": "Publisher control guidance",
+    "url": "https://blogs.bing.com/webmaster/september-2023/Announcing-new-options-for-webmasters-to-control-usage-of-their-content-in-Bing-Chat",
+    "note": "Official guidance on nocache / noarchive options for AI answer usage."
+  },
+  {
+    "engine": "Microsoft Bing / Copilot",
+    "category": "AI-powered search discoverability",
+    "url": "https://blogs.bing.com/webmaster/July-2025/Keeping-Content-Discoverable-with-Sitemaps-in-AI-Powered-Search",
+    "note": "Official guidance tying sitemap coverage to AI-powered discovery."
+  },
+  {
+    "engine": "Microsoft Bing / Copilot",
+    "category": "Webmaster tooling",
+    "url": "https://blogs.bing.com/webmaster/March-2025/Copilot-in-Bing-Webmaster-Tools-is-Now-Available-to-All-Users",
+    "note": "Current official view on Bing's AI-assisted webmaster workflows."
+  },
+  {
+    "engine": "Brave Search",
+    "category": "Search help",
+    "url": "https://search.brave.com/help",
+    "note": "Official help page covering Brave Search and AI summarization behavior."
+  },
+  {
+    "engine": "Brave Search",
+    "category": "AI answer behavior",
+    "url": "https://safe.search.brave.com/help/ai",
+    "note": "Official explanation of AI Answers and Ask Brave behavior."
+  },
+  {
+    "engine": "You.com",
+    "category": "Source controls",
+    "url": "https://you.com/support/advanced-source-controls",
+    "note": "Official source-control behavior relevant to answer-engine search inputs."
+  },
+  {
+    "engine": "You.com",
+    "category": "Web search API positioning",
+    "url": "https://you.com/business/api",
+    "note": "Shows how You.com frames citation-backed, LLM-oriented search."
+  }
+]

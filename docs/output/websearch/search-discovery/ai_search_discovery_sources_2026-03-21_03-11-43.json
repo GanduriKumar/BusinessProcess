@@ -1,0 +1,293 @@
+{
+  "generated_at": "2026-03-21T03:11:43.665855+00:00",
+  "items": [
+    {
+      "engine": "Google Search",
+      "category": "Site owner guidance",
+      "url": "https://developers.google.com/search/docs/appearance/ai-features",
+      "note": "Primary Search Central guidance for AI Overviews and AI Mode from a site-owner perspective.",
+      "fetched_at": "2026-03-21T03:11:45.153518+00:00",
+      "status_code": 200,
+      "last_modified": "Wed, 10 Dec 2025 18:38:05 GMT",
+      "title": "AI Features and Your Website | Google Search Central | Documentation | Google for Developers",
+      "description": "Google Search's AI features can help users find your website. Learn more about how AI features work in Search and how to approach your content's inclusion in these experiences.",
+      "headings": [
+        "AI features and your website",
+        "How AI features work in Search",
+        "How to appear in AI features",
+        "Technical requirements for appearing in AI features",
+        "SEO best practices",
+        "Measuring the performance of your site",
+        "Controlling your content in AI features in Search",
+        "Troubleshooting preview controls",
+        "Get support",
+        "Resources",
+        "Tools"
+      ]
+    },
+    {
+      "engine": "Google Search",
+      "category": "Product announcement",
+      "url": "https://blog.google/products/search/ai-mode-search/",
+      "note": "Official launch framing for AI Mode and expanded AI Overviews capabilities.",
+      "fetched_at": "2026-03-21T03:11:47.321595+00:00",
+      "status_code": 200,
+      "last_modified": "",
+      "title": "Expanding AI Overviews and introducing AI Mode",
+      "description": "AI Mode is a new generative AI experiment in Google Search.",
+      "headings": [
+        "Expanding AI Overviews and introducing AI Mode",
+        "Expanding AI Overviews",
+        "Introducing our new AI Mode experiment in Search",
+        "Testing in Labs",
+        "Related stories"
+      ]
+    },
+    {
+      "engine": "Google Search",
+      "category": "Product expansion",
+      "url": "https://blog.google/products/search/ai-overview-expansion-may-2025-update/",
+      "note": "Official update on AI Overviews expansion, usage, and web-link treatment.",
+      "fetched_at": "2026-03-21T03:11:48.372376+00:00",
+      "status_code": 200,
+      "last_modified": "",
+      "title": "AI Overviews expand to over 200 countries and territories, more than 40 languages",
+      "description": "Today at I/O, we announced that AI Overviews in Google Search are launching in new countries and languages, bringing the helpfulness of AI to more people around the worl\u2026",
+      "headings": [
+        "Related stories"
+      ]
+    },
+    {
+      "engine": "Google Search",
+      "category": "Content policy",
+      "url": "https://developers.google.com/search/blog/2023/02/google-search-and-ai-content",
+      "note": "Foundational guidance on AI-generated content and people-first quality.",
+      "fetched_at": "2026-03-21T03:11:49.665273+00:00",
+      "status_code": 200,
+      "last_modified": "Wed, 08 Feb 2023 08:00:00 GMT",
+      "title": "Google Search's guidance about AI-generated content | Google Search Central Blog | Google for Developers",
+      "description": "In this post, we'll share more about how AI-generated content fits into our long-standing approach to show helpful content to people on Search.",
+      "headings": [
+        "Google Search's guidance about AI-generated content",
+        "Rewarding high-quality content, however it is produced",
+        "How automation can create helpful content",
+        "Our advice for creators considering AI-generation",
+        "FAQ",
+        "Is AI content against Google Search's guidelines?",
+        "Why doesn't Google Search ban AI content?",
+        "How will Google Search prevent poor quality AI content from taking over search results?",
+        "How will Google address AI content that potentially propagates misinformation or contradicts consensus on important topics?",
+        "How can Search determine if AI is being used to spam search results?",
+        "Will AI content rank highly on Search?",
+        "Should I use AI to generate content?"
+      ]
+    },
+    {
+      "engine": "OpenAI / ChatGPT Search",
+      "category": "Product announcement",
+      "url": "https://openai.com/index/introducing-chatgpt-search/",
+      "note": "Official launch and product behavior for ChatGPT search.",
+      "fetched_at": "2026-03-21T03:11:50.875121+00:00",
+      "status_code": 200,
+      "last_modified": "",
+      "title": "Introducing ChatGPT search | OpenAI",
+      "description": "Get fast, timely answers with links to relevant web sources",
+      "headings": [
+        "Introducing ChatGPT search",
+        "Designed to get you to a better answer",
+        "Go straight to the source",
+        "How it works and what comes next",
+        "Authors",
+        "Research Lead",
+        "Technical Lead",
+        "Core Research, Product, Design, and Engineering",
+        "Contributors",
+        "Supporting Leadership",
+        "Related articles"
+      ]
+    },
+    {
+      "engine": "OpenAI / ChatGPT Search",
+      "category": "Publisher guidance",
+      "url": "https://help.openai.com/en/articles/12627856-publishers-and-developers-faq",
+      "note": "Official publisher and developer FAQ for ChatGPT search discoverability and controls.",
+      "fetched_at": "2026-03-21T03:11:52.755672+00:00",
+      "status_code": 200,
+      "last_modified": "",
+      "title": "Publishers and Developers - FAQ | OpenAI Help Center",
+      "description": "No meta description found.",
+      "headings": [
+        "Publishers and Developers - FAQ",
+        "Publisher FAQs",
+        "How can I get my website to appear in ChatGPT search results in the browser?",
+        "Does ChatGPT Atlas train on my web page content?",
+        "Developer FAQs",
+        "What can I do to improve my website performance with ChatGPT agent in Atlas?",
+        "How do apps built with the Apps SDK work in Atlas?",
+        "Was this article helpful?"
+      ]
+    },
+    {
+      "engine": "OpenAI / ChatGPT Search",
+      "category": "Commerce / discovery guidance",
+      "url": "https://openai.com/chatgpt/search-product-discovery/",
+      "note": "Current product-discovery guidance relevant to shopping-intent content.",
+      "fetched_at": "2026-03-21T03:11:54.374701+00:00",
+      "status_code": 200,
+      "last_modified": "",
+      "title": "Instant Checkout for merchants in ChatGPT",
+      "description": "Join ChatGPT\u2019s Instant Checkout to sell directly in conversations\u2014reach millions of shoppers, boost sales, and keep full control of your customer relationships.",
+      "headings": [
+        "Turn chats into checkouts",
+        "Meet your customers where they are",
+        "Convert chats into sales",
+        "Get discovered organically",
+        "Stay in control of your systems and customer relationships",
+        "How ChatGPT Shopping Search & Instant Checkout works",
+        "Shoppers search naturally",
+        "Buyers compare options in one place",
+        "Customers buy directly from you",
+        "Payments are seamless and secure",
+        "Own the post-purchase journey",
+        "Build with the Agentic Commerce Protocol"
+      ]
+    },
+    {
+      "engine": "Perplexity",
+      "category": "Crawler guidance",
+      "url": "https://www.perplexity.ai/help-center/en/articles/10354969-how-does-perplexity-follow-robots-txt",
+      "note": "Official robots.txt and indexing behavior guidance.",
+      "fetched_at": "2026-03-21T03:11:55.966051+00:00",
+      "status_code": 200,
+      "last_modified": "",
+      "title": "How does Perplexity follow robots.txt? | Perplexity Help Center",
+      "description": "No meta description found.",
+      "headings": [
+        "How does Perplexity follow robots.txt?",
+        "Will my content be used for AI training if I allow it to appear in Perplexity?",
+        "Why have I read that Perplexity\u2019s crawlers don\u2019t respect robots.txt?"
+      ]
+    },
+    {
+      "engine": "Perplexity",
+      "category": "Source quality signal",
+      "url": "https://www.perplexity.ai/help-center/en/articles/12870803-premium-data-sources",
+      "note": "Indicates emphasis on authoritative premium data sources.",
+      "fetched_at": "2026-03-21T03:11:56.813461+00:00",
+      "status_code": 200,
+      "last_modified": "",
+      "title": "Premium Data Sources | Perplexity Help Center",
+      "description": "Integrate Wiley, PitchBook, CB Insights, and Statista directly into Perplexity for research across business, tech, medical, and other fields",
+      "headings": [
+        "Premium Data Sources",
+        "Which premium data sources are available?",
+        "How do I access premium data sources?",
+        "Examples:",
+        "Discover more\u2014all in one place"
+      ]
+    },
+    {
+      "engine": "Microsoft Bing / Copilot",
+      "category": "Publisher control guidance",
+      "url": "https://blogs.bing.com/webmaster/september-2023/Announcing-new-options-for-webmasters-to-control-usage-of-their-content-in-Bing-Chat",
+      "note": "Official guidance on nocache / noarchive options for AI answer usage.",
+      "fetched_at": "2026-03-21T03:11:58.789955+00:00",
+      "status_code": 200,
+      "last_modified": "",
+      "title": "Announcing new options for webmasters to control usage of their...",
+      "description": "How do you want your content to be used in the AI era? Learn how Bing gives webmasters new control over their content in Bing Chat and for training",
+      "headings": [
+        "Announcing new options for webmasters to control usage of their content in Bing Chat",
+        "Links for Bing",
+        "Other Microsoft links",
+        "Other product blogs"
+      ]
+    },
+    {
+      "engine": "Microsoft Bing / Copilot",
+      "category": "AI-powered search discoverability",
+      "url": "https://blogs.bing.com/webmaster/July-2025/Keeping-Content-Discoverable-with-Sitemaps-in-AI-Powered-Search",
+      "note": "Official guidance tying sitemap coverage to AI-powered discovery.",
+      "fetched_at": "2026-03-21T03:11:59.172735+00:00",
+      "status_code": 200,
+      "last_modified": "",
+      "title": "Keeping Content Discoverable with Sitemaps in AI Powered Search...",
+      "description": "AI search is redefining how content is discovered and ranked, but sitemaps still matter. When paired with IndexNow, they provide the structure and",
+      "headings": [
+        "Keeping Content Discoverable with Sitemaps in AI Powered Search",
+        "Tags",
+        "Does Duplicate Content Hurt SEO and AI Search Visibility?",
+        "How AI Search Is Changing the Way Conversions are Measured",
+        "IndexNow Enables Faster and More Reliable Updates for Shopping and Ads",
+        "Links for Bing",
+        "Other Microsoft links",
+        "Other product blogs"
+      ]
+    },
+    {
+      "engine": "Microsoft Bing / Copilot",
+      "category": "Webmaster tooling",
+      "url": "https://blogs.bing.com/webmaster/March-2025/Copilot-in-Bing-Webmaster-Tools-is-Now-Available-to-All-Users",
+      "note": "Current official view on Bing's AI-assisted webmaster workflows.",
+      "fetched_at": "2026-03-21T03:11:59.505797+00:00",
+      "status_code": 200,
+      "last_modified": "",
+      "title": "Copilot in Bing Webmaster Tools is Now Available to All Users...",
+      "description": "Copilot in Bing Webmaster Tools is now generally available and live to all users! Discover how Copilot&#39;s key features like real-time Q&amp;A, deep",
+      "headings": [
+        "Copilot in Bing Webmaster Tools is Now Available to All Users",
+        "Tags",
+        "How AI Search Is Changing the Way Conversions are Measured",
+        "Keeping Content Discoverable with Sitemaps in AI Powered Search",
+        "AI Revolutionizes Search: Key Insights from Microsoft Accelerate",
+        "Links for Bing",
+        "Other Microsoft links",
+        "Other product blogs"
+      ]
+    },
+    {
+      "engine": "Brave Search",
+      "category": "Search help",
+      "url": "https://search.brave.com/help",
+      "note": "Official help page covering Brave Search and AI summarization behavior.",
+      "fetched_at": "2026-03-21T03:12:00.981195+00:00",
+      "status_code": 200,
+      "last_modified": "",
+      "title": "Help Pages | Brave Search",
+      "description": "Search the Web. Privately. Truly useful results, AI-powered answers, & more. All from an independent index. No profiling, no bias, no Big Tech.",
+      "headings": [
+        "How to use Brave Search: an overview",
+        "The basics of navigating Brave Search",
+        "What sets Brave Search apart",
+        "Search Ads and Search Premium",
+        "Brave Search features and how to use them",
+        "AI in Brave Search",
+        "Get started with Brave Search"
+      ]
+    },
+    {
+      "engine": "Brave Search",
+      "category": "AI answer behavior",
+      "url": "https://safe.search.brave.com/help/ai",
+      "note": "Official explanation of AI Answers and Ask Brave behavior.",
+      "fetched_at": "2026-03-21T03:12:02.395764+00:00",
+      "status_code": 200,
+      "last_modified": "",
+      "title": "AI in Brave Search | Brave Search",
+      "description": "Search the Web. Privately. Truly useful results, AI-powered answers, & more. All from an independent index. No profiling, no bias, no Big Tech.",
+      "headings": [
+        "AI in Brave Search"
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "url": "https://you.com/support/advanced-source-controls",
+      "error": "HTTPError: 403 Client Error: Forbidden for url: https://you.com/support/advanced-source-controls"
+    },
+    {
+      "url": "https://you.com/business/api",
+      "error": "HTTPError: 403 Client Error: Forbidden for url: https://you.com/business/api"
+    }
+  ]
+}
